@@ -2,440 +2,810 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 05/06/2017
+ ▼ 06/09/2017
 
 
- ▪ project device/samsung/trlte-common/
- ▪ 2264bb8 delete BCM4358 items cause older bt devices not work
+ ▪ project build/
+ ▪ 24bd47a Merge remote-tracking branch 'rr/nougat' into nougat-dt
+ ▪ b1f8acf core: minimize dumpvar
 
- ▪ project frameworks/av/
- ▪ 1d4353b change cam params
+ ▪ project frameworks/base/
+ ▪ 2a31bc4 Merge remote-tracking branch 'rr/nougat' into nougat-github
+
+ ▪ project kernel/samsung/trlte/
+ ▪ 98453d1 f2fs: avoid to issue redundant discard commands
+ ▪ e10c99a f2fs: show simple call stack in fault injection message
+ ▪ 2398f0f2 Revert "f2fs: show simple call stack in fault injection message"
+ ▪ bf5dd30 f2fs: show simple call stack in fault injection message
+ ▪ dc4a837 fscrypt: catch fscrypto_get_policy in v4.10-rc6
+ ▪ d79a5b2 f2fs: remove unnecessary condition check for write_checkpoint in f2fs_gc
+ ▪ 9b9d23a f2fs: do SSR in higher priority
+ ▪ b59ecf4 f2fs: node segment is prior to data segment selected victim
+ ▪ c6939b5 f2fs: put allocate_segment after refresh_sit_entry
+ ▪ 38301d3 f2fs: add ovp valid_blocks check for bg gc victim to fg_gc
+ ▪ 2ee7d62 f2fs: do not wait for writeback in write_begin
+ ▪ 59cce4e f2fs: replace __get_victim by dirty_segments in FG_GC
+ ▪ 14d4df7 f2fs: use SSR for warm node as well
+ ▪ d9baff8 f2fs: introduce noinline_xattr mount option
+ ▪ dd41546 f2fs: remove build_free_nids() during checkpoint
+ ▪ 138b110 f2fs: change recovery policy of xattr node block
+ ▪ e55ae83 f2fs: super: constify fscrypt_operations structure
+
+ ▪ project packages/apps/Settings/
+ ▪ 24e20c4 Merge remote-tracking branch 'rr/nougat' into nougat-github
+
+ ▼ 06/08/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 2f89ae2 Optimised hwui rounded corners shader
+ ▪ b021af9 SystemUI: Reroute Battery QS Tile tint back to original color
+ ▪ 4b50c93 Fix a use-of-uninitialized-value warning.
+ ▪ 84fba94 Fix a use-of-uninitialized-value warning
+ ▪ 10a9f4e Reduce hwui CPU time by using glDrawRangeElements
+ ▪ 1590b9a Close recents panel after drag-cards-for-multiwindow action
+ ▪ 848f8bc Slim recents: use multiwindow button to drag cards
+ ▪ 4253922 Update memory state on emtpyView click
+ ▪ 5332827 Optional No sim icon switch [1/2]
+ ▪ 2b65ab8 QS: Remove listeners only if added
+
+ ▪ project kernel/samsung/trlte/
+ ▪ a27ef4f f2fs: show # of APPEND and UPDATE inodes
+ ▪ c2e66fb f2fs: fix 3 coding style errors in f2fs.h
+ ▪ 6d3a23a f2fs: declare missing static function
+ ▪ ec3b7b1 f2fs: show the fault injection mount option
+ ▪ bf8955d f2fs: enhance lookup xattr
+ ▪ 62c1a49 f2fs: fix a dead loop in f2fs_fiemap()
+ ▪ 7dcc2c9 f2fs: clean up flush/discard command namings
+ ▪ 475282c f2fs: clean up with list_{first, last}_entry
+ ▪ bf568a2 f2fs: reassign new segment for mode=lfs
+ ▪ 9d9f248 f2fs: use rb_entry_safe
+ ▪ 7676466 f2fs: fix a problem of using memory after free
+ ▪ 99a73ff f2fs: remove unneeded condition
+ ▪ f1e1264 f2fs: don't cache nat entry if out of memory
+ ▪ f2e4d1c0 f2fs: remove unused values in recover_fsync_data
+ ▪ 622bb0a f2fs: add migrate_page to avoid patch conflicts
+
+ ▪ project packages/apps/Email/
+ ▪ ea4eb75 Adjust Email UnitTests to e353ae2ea19c9ea800d10b37e05de7b0ea1aeeb4
+
+ ▪ project packages/apps/Jelly/
+ ▪ 22cb565 Implement history management through a ContentProvider.
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 16cdbad Optional no sim icon switch [2/2]
+ ▪ 3681ae5 Fix FC in Configurations - About - Device and Maintainers (#803)
+
+ ▼ 06/07/2017
+
+
+ ▪ project build/
+ ▪ e3e0a6b Merge remote-tracking branch 'rr/nougat' into nougat-dt
+
+ ▪ project external/chromium-webview/
+ ▪ 2909904 Update webviews
+
+ ▪ project frameworks/base/
+ ▪ 4698e7d Merge remote-tracking branch 'rr/nougat' into nougat-github
+
+ ▪ project kernel/samsung/trlte/
+ ▪ e01bad1 dccp/tcp: do not inherit mc_list from parent
+ ▪ c90004e ss_vibrator: Make sysfs compatible with CMHW
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 93bcb4c Gallery2: support GIF animation
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
+
+ ▪ project packages/apps/Settings/
+ ▪ 87cabde Reduce Volume panel dialog min timout to 350ms
+ ▪ c9827d4 Merge remote-tracking branch 'rr/nougat' into nougat-github
 
  ▪ project packages/apps/Snap/
- ▪ 44ee340 Merge remote-tracking branch 'github/cm-14.1' into nougat
+ ▪ 604a725 Merge remote-tracking branch 'github/cm-14.1' into nougat
 
- ▪ project system/bt/
- ▪ 0ebf465 Do not include the trailing NULL from the C-String in the SDP service name
+ ▪ project packages/apps/Terminal/
+ ▪ 5856a60 Terminal: Fix keyboard Ctrl- and ALT-key input.
 
  ▪ project vendor/cm/
- ▪ b618621 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
- ▪ 1ce73bc update substratum to latest version (712)
+ ▪ a3d38a2 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
 
- ▼ 05/05/2017
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/OpenWeatherMapProvider/
+ ▪ 3fe4133 Add back key to actionbar
+ ▪ b9b9cce Add openweathermap copyright
+ ▪ d0d73c5 Add icon
+ ▪ dccb527 Refactor cyanogenmod -> lineageos
+ ▪ 9d01897 Update gradle
 
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+ ▪ 3e9b1c1 Don't fail when a translation is missing
+ ▪ 3a8340c Update icon
+ ▪ a195bb4 Refactor cyanogenmod -> lineageos
+ ▪ a1ff743 Update gradle
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+ ▪ bf4c5a3 Don't fail when a translation is missing
+ ▪ 6110585 Update app name to match other providers
+ ▪ a0d2c7c Update icon
+ ▪ fd3221f Refactor cyanogemod -> lineageos
+ ▪ 5cb7ddf Update gradle
+
+ ▼ 06/06/2017
+
+
+ ▪ project android/
+ ▪ a46ed2f Revert "Track own system_media"
+ ▪ d73bf77 Track own system_media
+ ▪ 949aff4 manifest: android-7.1.2_r8 -> android-7.1.2_r17
+
+ ▪ project build/
+ ▪ cc30c3a Merge tag 'android-7.1.2_r17' into nougat
 
  ▪ project frameworks/base/
- ▪ ed3936e Make Scrolling for TaskManager list a lot easier
- ▪ 03a9a2e Base:Dont do anything on weather errors for header & keyguard
+ ▪ b8bb91f Merge tag 'android-7.1.2_r17' into nougat
 
- ▪ project packages/apps/Dialer/
+ ▪ project frameworks/native/
+ ▪ dae45e0 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+ ▪ 1eed077 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project libcore/
+ ▪ b162f5e Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ 9d274ac BluetoothOppTransferActivity: fix after ad46f6a52d7240ed1e2127c4263a5cbcf454df09
+ ▪ 9efb588 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Gallery2/
+ ▪ 95cb32b Increase the size of the tiles when decoding images
 
  ▪ project packages/apps/Jelly/
- ▪ 2006774 Jelly: no need of using srcCompat for imageviews
+ ▪ e28fd6c Jelly: Add HTTP auth login support
+
+ ▪ project packages/apps/Messaging/
+ ▪ ef18c3d Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/services/OmniJaws/
+ ▪ project packages/apps/PackageInstaller/
 
- ▼ 05/04/2017
+ ▪ project packages/apps/Settings/
+ ▪ 267b76c Settings:Limit minimum volume panel timeout to 250ms
+ ▪ a5dfd15 Update Build ID
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 3ddceec Settings: Implement ADB over network
+ ▪ bf8bc80 Settings: Add intent to launch LineageOS platlogo upon multiple taps
+ ▪ 0165eb8 settings: Add advanced reboot switch
+ ▪ e1c67c5 Settings: Set root access options appropriately
+ ▪ 253b262 settings: Add developer setting for root access
+ ▪ f4e82a3 Use more descriptive strings for add accessory page
+ ▪ 3733c2b About: Add LineageOS Updates
+ ▪ 0fe2e3b Add build date (ro.build.date from build.prop) to About screen.
+ ▪ 18c18a9 One does not simply become a Developer
+ ▪ 34001b8 Add LineageOS version to the About screen
+
+ ▪ project system/bt/
+ ▪ aa31852 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project system/core/
+ ▪ 5504d46 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+ ▪ 5e54c5f libcutils: fix schedboost after 31f78ddf4ea2ab7963d873cb16db98e976346468
+ ▪ 14bdeb8 Merge tag 'android-7.1.2_r17' into cm-14.1
+
+ ▪ project vendor/cm/
+ ▪ 0454ffd Vendor: Build AudioFX again
+
+ ▼ 06/05/2017
 
 
- ▪ project bootable/recovery/
- ▪ 616bf9a recovery: Fix event system
+ ▪ project android/
+ ▪ bcb3fb7 crowdin: add PackageInstaller
+
+ ▪ project external/stagefright-plugins/
+ ▪ 05bf4e7 ffmpeg-extractor: StageFright supports Opus files
+ ▪ 11bc5a2 Revert "FFmpegExtractor: Don't use our extractor when we agree with StageFright"
 
  ▪ project frameworks/base/
- ▪ e67fe65 KeyguardStatusBar: Add missing TouchAnimation for hiding statusbar
- ▪ 640db94 Base: Make sure keyguard and header handle weather errors as well
- ▪ d9c5ba7 base: SystemUI: dont hide navbar for screenshot crop
- ▪ 9fa52a5 base: SystemUI: qs: location tile quickbar press is just toggle
- ▪ 3db7979 base: SystemUI: dont hide weather forcast data on errors
- ▪ 4c60572 base: SystemUI: use new OmniJaws error broadcasts
- ▪ ad493bf Fix keyguard is black background while screen turning off/on quickly
- ▪ 41d90ba Reboot/Recovery QS Tile: Use vectorized icons
+ ▪ 0a001c5 Fix SystemUI FC due to Google Assistant
+ ▪ 16a622d Handle Illegal Argument Exception
+ ▪ 50b3778 Reduce MTU Size
+ ▪ fc52d47 FW_BASE: Rewrite restart SystemUI method
+ ▪ 42fa816 Add support for page theme color to WebView and WebChromeClient.
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 6850778 AudioFX: Sign with platform key
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Jelly/
- ▪ 9be745e Jelly: fix InflateException on builds compiled with aosp build system
- ▪ b01a7b8 Jelly: handle rotation and multiwindow changes
-
  ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/PackageInstaller/
 
  ▪ project packages/apps/ResurrectionOTA/
 
  ▪ project packages/apps/ResurrectionStats/
 
+ ▪ project packages/apps/Settings/
+ ▪ 5910d21 Settings:Rewrite Restart SystemUI
+
  ▪ project packages/services/OmniJaws/
- ▪ aa857b5 OmniJaws: come here all you hidden bugs into the bright light
- ▪ a169929 OmniJaws: weather widget fixes
- ▪ a9b5863 OmniJaws: add weather widget
- ▪ d106dcd OmniJaws: add error broadcast
-
- ▼ 05/03/2017
-
-
- ▪ project bionic/
- ▪ 22d6b5b libc: ARM: Add 32-bit Kryo memcpy
- ▪ 45a3987 libc: use Cortex-A7/A53 memset on Kryo
- ▪ ba97f82 Add kryo support.
-
- ▪ project bootable/recovery/
- ▪ 8011e66 recovery: Fix UI freezing
-
- ▪ project packages/apps/DUI/
- ▪ aba99d5 Fix Fling swipe up gesture being hard to trigger
-
- ▪ project packages/apps/Dialer/
- ▪ b239b70 Dialer: InCallUI: Enable Sustained Performance Mode We should make sure that thermals are stable during active calls, so we should enable Sustained Performance Mode for the InCallActivity.
-
- ▼ 05/02/2017
-
-
- ▪ project android/
- ▪ 7c6e872 manifests: 7.1.2_r2-> r8
- ▪ 16e5022 android: nuke browser, welcome jelly
- ▪ 8ead0d4 Manifest : Stop syncing blank intel sensor repo.
- ▪ 1aaf24e manifest: Track our external/libchrome
-
- ▪ project build/
- ▪ fab5d1d Merge tag 'android-7.1.2_r8' into nougat
- ▪ e6c0264 Revert "We want Browser"
-
- ▪ project external/boringssl/
- ▪ 8f156df Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/av/
- ▪ 24697a3 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
- ▪ 16dcaaa Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project frameworks/base/
- ▪ 0501270 Merge tag 'android-7.1.2_r8' into nougat
- ▪ e8d78b4 fix anr when concurrent request provider
- ▪ d0d7aee Ensure that the decor view is attached to window.
- ▪ 119e0d3 Bad token of activity when do the launch work at the app process side.
- ▪ 0555835 Query geo description in worker thread to prevent ANR
- ▪ a87340f remove duplicated incorrectly code in ProcessRecord
- ▪ 3f19033 fix foreground process will be mistakenly killed when it uses content provider.
- ▪ 1e33d08 Restart persistent process if start timeout.
- ▪ 88fd7c1 fix system_server crash issue caused by fd leak.
- ▪ 2f5069e Compass qs tile: Fix icon in edit mode
-
- ▪ project frameworks/native/
- ▪ c544fcc Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
- ▪ b8fb318 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project packages/apps/Jelly/
- ▪ 2f41ee6 Jelly: expose toolbar elevation
- ▪ 74270cc Jelly: history: swipe to delete
- ▪ 244fab9 Jelly: use custom dialog for home page selection
-
- ▪ project packages/apps/Messaging/
- ▪ 9ea833a Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_messaging into nougat
-
- ▪ project system/bt/
- ▪ 85d4e42 Merge tag 'android-7.1.2_r8' into cm-14.1
-
- ▪ project system/core/
- ▪ 259efc1 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
- ▪ d7cbf4b Merge tag 'android-7.1.2_r8' into cm-14.1
 
  ▪ project vendor/cm/
- ▪ 137c340 cm: nuke browser, welcome jelly
- ▪ b43a798 cm: Remove obsolete and unused overlays and configs
+ ▪ 69d6029 fix check_blacklist function to work on wiped /system partition
+ ▪ d0be161 sensitive_pn: Add sensitive numbers for Serbia
 
- ▼ 05/01/2017
+ ▼ 06/04/2017
 
 
- ▪ project frameworks/base/
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 92fa2ea Merge tag 'LA.UM.5.5.r1-04700-8x96.0' into HEAD
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ 99c45c1 FlipFlap: Circle/Rectangle View: Force layout to the follow BatteryViews
 
  ▪ project packages/apps/Jelly/
- ▪ 17755b3 Jelly: add option to clear cookies
+ ▪ 7ac5399 Add support for WebViews that provide the site's theme color.
 
  ▪ project packages/apps/OmniSwitch/
 
- ▪ project packages/services/OmniJaws/
+ ▪ project packages/apps/ResurrectionOTA/
 
- ▪ project system/extras/su/
- ▪ 7344440 su: Don't start daemon for adb only mode
+ ▪ project packages/apps/Settings/
+ ▪ 4031811 Correction (#802)
+ ▪ 3cc6e83 Add Galaxy S4 Mini as Official (#799)
 
- ▼ 04/30/2017
+ ▼ 06/03/2017
 
-
- ▪ project bootable/recovery/
- ▪ 5d701cc recovery: Complete project pathmap usage
-
- ▪ project build/
- ▪ 1856c8b Revert "build: releasetools: ota: Add support for 32-64 bit upgrades"
- ▪ 3796928 build: fix verity generation
 
  ▪ project frameworks/base/
- ▪ 42c3f58 am: Handle unchecked activity starts for protected components (2)
+ ▪ 8ff5e2e Recents:improve task locking code & mechanism
+
+ ▪ project hardware/samsung/
+ ▪ ab9abf6 liblights: Fix variable button brightness code
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 06/02/2017
+
+
+ ▪ project frameworks/base/
+ ▪ d0bf589 fw: Don't consume home key press when KEY_ACTION_SLEEP is used
+ ▪ cc8e5e6 SystemUI: Specify user while changing brightness mode
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ ef3989b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
+ ▪ 40d378a Revert "audio HAL: fix thread starvation"
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ d781d8f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.18' into cm-14.1-caf-8916
 
  ▪ project packages/apps/Dialer/
- ▪ 8c8f139 InCallUI: Don't force enable the prox sensor for incoming calls
+ ▪ ae7d2f6 Dialer: update fab color to match aosp primary color
 
- ▪ project packages/apps/Jelly/
- ▪ 13c1311 Jelly: Fix typo
+ ▪ project packages/apps/OmniSwitch/
 
- ▼ 04/29/2017
+ ▪ project packages/apps/Settings/
+ ▪ 4012daa Mi Note 2 Maintainer Update (#797)
 
+ ▪ project packages/services/Telecomm/
+ ▪ 4ded59b (1/2) Make sensitive phone numbers not to be shown in call log history.
 
- ▪ project bootable/recovery/
- ▪ 39ce741 Revert "recovery:updater: Changes to support 32->64 bit upgrades"
+ ▪ project packages/services/Telephony/
+ ▪ 8171340 Fix minor inconsistency in the CDMA call settings
+ ▪ 6c91d6c telephony: Fix and move CAF strings
 
- ▪ project device/qcom/common/
- ▪ 0dc3673 recovery: Use project pathmap for recovery
+ ▪ project system/sepolicy/
+ ▪ 759e540 Add policy to fix interfacer derp on boot
+ ▪ 31468f5 Allow recovery to alter / on userdebug/eng builds
 
- ▪ project device/samsung/trlte-common/
- ▪ 576d124 bluetooth: add additional low-latency bt-sco records from Nexus 6 shamu N6F26Y
- ▪ 6129657 camera: Add allowed scene modes and selectable iso modes again
+ ▪ project vendor/cm/
+ ▪ 3b631c0 sensitive_pn: Add sensitive phone numbers for India
+ ▪ 6d364bf sensitive_pn: Add more numbers for Germany
+ ▪ bf099c9 sensitive_pn: Add sensitive phone numbers for Norway
+ ▪ 9f417a1 sensitive_pn: Add additional US numbers
+ ▪ 2f24950 sensitive_pn: add sensitive number for Indonesia
+ ▪ e0f17b9 sensitive_pn: Add sensitive phone number for Romania
+ ▪ cd6c6be sensitive_pn: Added sensitive number for the Netherlands
+ ▪ 3575664 sensitive_pn: add sensitive numbers for Turkey
+ ▪ 229f62f sensitive_pn: Add sensitive phone number for Bangladesh
+ ▪ 5630a4a sensitive_pn: Add US number
+ ▪ 269c86c Add sensitive phone numbers for Brazil
+ ▪ 3fbdf51 sensitive_pn: reorder by MCC code
+ ▪ 56658d2 sensitive_pn: Add Australian sensitive phone number.
+ ▪ 34d9d56 sensitive_pn: Add New Zealand sensitive numbers.
+ ▪ 7ce9ff5 (2/2) Make sensitive phone numbers not to be shown in call log history.
+ ▪ a3f80fd overlay: Enable Wi-Fi by default on first boot
+ ▪ b52ed87 Show full alarm info
 
- ▪ project device/samsung/trltexx/
- ▪ ddd7392 trltexx: add trlte to allow branded Note 4 to flash rom
+ ▪ project vendor/cmsdk/
+ ▪ 5c781da Double tap to sleep anywhere on lock screen [3/3]
+ ▪ 4fb9332 cmsdk: Disable Lockscreen Media Art [3/3]
+ ▪ 2f25936 cmsdk: fix twilight state not updating in live display auto mode
+
+ ▼ 06/01/2017
+
 
  ▪ project frameworks/base/
-
- ▪ project hardware/libhardware_legacy/
- ▪ ec33ac3 wifi: add firmware loader support for the non-LKM case
+ ▪ 9916373 Fix nav bar showing always on the left when rotated to 270 degrees. Also, fix the order of the buttons so the back button always shows on the bottom
 
  ▪ project hardware/qcom/fm/
 
- ▪ project hardware/ril-caf/
- ▪ f095c4e Merge remote-tracking branch 'github/staging/cm-14.1_android-7.1.2_r2' into cm-14.1-caf
-
  ▪ project hardware/samsung/
 
- ▪ project kernel/samsung/trlte/
- ▪ 3d165d8 battery: add POWER_SUPPLY_PROP_VOLTAGE_NOW calc POWER_SUPPLY_PROP_VOLTAGE_MAX * 100000 into uV to display voltage at lockscreen battery info
- ▪ 6196f99 bluetooth: set TX_TIMER_INTERVAL to 10 sec.
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/Calendar/
+
+ ▪ project packages/apps/Camera2/
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/FlipFlap/
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/DeskClock/
+
+ ▪ project packages/apps/EmergencyInfo/
+
+ ▪ project packages/apps/FMRadio/
 
  ▪ project packages/apps/Gallery2/
+
+ ▪ project packages/apps/Jelly/
+
+ ▪ project packages/apps/ManagedProvisioning/
+
+ ▪ project packages/apps/Messaging/
+
+ ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
- ▪ 858f9ef Settings: Add 25ms and 50ms animation duration cause smallest value (100ms) to long for some effects
- ▪ 7f73b0e Merge pull request #1 from ResurrectionRemix/nougat
+ ▪ 3b35f19 Settings: enable fast scroll for all app list views
 
  ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
 
+ ▪ project packages/apps/Tag/
+
+ ▪ project packages/apps/Trebuchet/
+
+ ▪ project packages/apps/TvSettings/
+
+ ▪ project packages/inputmethods/LatinIME/
+
+ ▪ project packages/providers/WeatherProvider/
+
  ▪ project packages/resources/devicesettings/
 
- ▪ project system/core/
- ▪ 3efb4ec fs_mgr: Use project pathmap for recovery
- ▪ 783cb54 healthd: Use project pathmap for recovery
+ ▪ project packages/services/LiveLockScreenService/
 
- ▪ project system/extras/
- ▪ f30ae7f Use project pathmap for recovery
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
- ▪ project system/sepolicy/
- ▪ 63ab43b clear merging failure
+ ▪ project vendor/qcom/opensource/cryptfs_hw/
+ ▪ da6e595 cryptfs_hw: Fix stack out of bound issue
 
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/samsung/
- ▪ 5d4e32b trlte-common: update *.acdb files, add libuiblur.so
- ▪ 3b3d42a proprietary_vendor: remove obsolete or unused libs
- ▪ 09ac33b trltexx: move libbt-vendor.so to vendor/lib,
-
- ▼ 04/28/2017
+ ▼ 05/31/2017
 
 
  ▪ project frameworks/base/
 
  ▪ project hardware/samsung/
- ▪ a58b7d9 AdvancedDisplay - Rename default scenario
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 40e3809 JobService: Expose configuration shim refresh delay
- ▪ 3f3c33b Add a looper to the locale change handler
-
- ▪ project vendor/cm/
- ▪ e1ba914 rr: clean up Makefiles
-
- ▼ 04/27/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/Settings/
- ▪ c50d9a6 added zuk Z2 plus (#768)
-
- ▪ project packages/apps/Trebuchet/
- ▪ 29b0b0a Trebuchet: lineage launcher icon
- ▪ c9e7654 Trebuchet: Do not crash if normalized string for sorting is empty
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/26/2017
-
-
- ▪ project frameworks/base/
- ▪ b250de6 Fix animation duration for custom animations
- ▪ 4863e25 Fix DUI slippery flag logic and IllegalArgumentException [2/2]
- ▪ 1650a12 Need to resize new created stack to fullscreen after docked stack tasks has moved into it.
- ▪ cda2cbe Fix race condition when writing UidState of appops.
- ▪ 000c5b8 Fix PacketKeepalive.stop() crash
- ▪ deef943 ActivityStack index OOB cause device restart
- ▪ 07a5433 Remove force weather update bits
- ▪ 48f1315 Redundant waiting time of keyguard unlocking after reboot
- ▪ 7911e22 Make sure that the device name is not null before returning it
- ▪ 8c3fb3b Fix a null pointer exception in FragmentManager
- ▪ aa5f6e6 Keyguard: Move CAF strings to cm_strings.xml.
- ▪ 94a3bb6 fingerprint: notify client when cancelling succeeded
- ▪ 2e7a838 Revert "base: services: add config_fingerprintRemoveClientOnCancel"
-
- ▪ project frameworks/opt/telephony/
- ▪ bc43228 Create cdma dummy apns.
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 6bace74 msm8996: audio: Add l/r mic swapping when using stereo mics
-
- ▪ project hardware/samsung/
- ▪ 9432ff3 mkbootimg: add exynos subdir to possible_dtb_dirs
+ ▪ d81a0a3 liblights: Add support for variable touchkey brightness
 
  ▪ project packages/apps/DUI/
- ▪ 8f840c5 Fix DUI slippery flag logic and IllegalArgumentException [1/2]
 
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Gallery2/
- ▪ 1f0ec6e Revert "Gallery2: hide navigation bar when we turn off lights"
-
- ▪ project packages/apps/Settings/
- ▪ 52d6890 Settings: Custom animation duration settings [2/2]
- ▪ 4382afd Screenshot Delay:Make it faster optionally
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 9936dc3 README: Recommend Interfacer be put in the services folder
-
- ▪ project packages/apps/Trebuchet/
- ▪ 99649a5 Don't show market links if market app is protected
- ▪ 1cc5cef Trebuchet: use normalized strings for sorting into bucket
-
- ▪ project packages/services/OmniJaws/
- ▪ 772c1b8 OmniJaws: remove separation between force and not force update
- ▪ 7193cd8 OmniJaws: add fetch weather data retry loop
-
- ▼ 04/25/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/samsung/
- ▪ 5e4fbe0 power: Sanity check touchscreen path
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/Settings/
-
- ▪ project packages/apps/ThemeInterfacer/
- ▪ 97eceaf JobService: Transition to the Binder Interprocess Communication System
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/24/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ fc1c0d9 Add special case for stereo camcorder
+ ▪ project packages/apps/Jelly/
+ ▪ 0106448 Jelly: Enable adjust bounds for incognito image
+ ▪ c642120 Jelly: Never hide history view
+ ▪ ea83c6c Jelly: Use an observer to refresh the history view
+ ▪ 837ec77 Add an indicator icon for incognito mode.
 
  ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ e27dd96 Add Galaxy S7/edge maintainer (#761)
-
- ▪ project packages/services/OmniJaws/
-
- ▼ 04/23/2017
-
-
- ▪ project external/stagefright-plugins/
- ▪ 3846013 Revert "codecs: Disable AC3/EAC3"
-
- ▪ project frameworks/base/
- ▪ 5dc497d Revert "Fix exploit where can hide the fact that a location was mocked"
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 97baada hal: Featureize APE/VORBIS/WMA offload support
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/ResurrectionOTA/
+ ▪ fab5e78 OmniSwitch: cleanup BitmapUtils
+ ▪ 0ad4cd0 OmniSwitch: fix crash on special app icon formats
+ ▪ e6e21ad OmniSwitch: shadow wars
+ ▪ 3de4c24 OmniSwitch: Launcher: refine assist activity check
+ ▪ 4ec4e60 OmnSwitch: enable update thumbs during swipe
+ ▪ 74acfe7 OmniSwitch: Launcher: check for existing assist activities
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ d40aee2 Update Moto G4 Plus Maintainer (#760)
 
- ▪ project packages/apps/Snap/
- ▪ 4147a7d Merge remote-tracking branch 'github/cm-14.1' into nougat
+ ▪ project packages/apps/Terminal/
+ ▪ 18225bd Terminal: all menu items should have their proper icon
+ ▪ ca41ebc Terminal: update main theme color for improved readability
+ ▪ 0ec9d32 Terminal: fix preference defaults
+ ▪ 5d69fc4 Terminal: volume keys as up/down
+
+ ▪ project packages/resources/devicesettings/
+ ▪ 1935d69 Add fingerprint sleep strings
 
  ▪ project packages/services/OmniJaws/
 
- ▼ 04/22/2017
+ ▼ 05/30/2017
 
+
+ ▪ project external/stagefright-plugins/
+ ▪ 4089877 FFmpegExtractor: Don't use our extractor when we agree with StageFright
 
  ▪ project frameworks/base/
+ ▪ 39b9d5b Recents: Ensure Lock icon animates only when Dismiss icon is visible
+ ▪ 8573690 Fix launch music player on headset connect on reboot
+ ▪ 7b24b49 Recents:Optional lock to task icon in recents task view header [1/2]
+ ▪ 3525359 Base:Add Lock task action to recents
 
- ▪ project hardware/qcom/fm/
- ▪ 51e71fd libfm_jni: Fix strchr implicit char* typecast in ConfFileParser
- ▪ 56dd18a libjm_jni: Missing liblog dependency and jni core headers
+ ▪ project hardware/qcom/display-caf/msm8960/
+ ▪ d222af7 hwc: return correct color format string while layer dump
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ ad0c195 FlipFlap: Hide cover view before removing
+
+ ▪ project packages/apps/Jelly/
+ ▪ c35cc24 Jelly: Update android tools build
+ ▪ 020a697 Jelly: Don't accept cookies in incognito mode
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Snap/
+ ▪ f68cddc SnapdragonCamera: Fix torch mode with continuous shot
+ ▪ c737df5 Revert "Snap: CaptureModule: lock exposure also when precapture trigger is started"
+ ▪ 09a7a0b SnapdragonCamera: Camera2 force close after focused
+ ▪ 018fdd0 SnapdragonCamera: GPS location can't be turn On in camera settings
+ ▪ 26d9aec Fixed camera crash on exit
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 1a65ab8 Trebuchet: Sign with platform key
+
+ ▪ project vendor/cm/
+ ▪ 46fc541 typo fixed (#92)
+
+ ▼ 05/29/2017
+
+
+ ▪ project hardware/samsung/
+ ▪ 63b5bd7 power: Write IO busy parameter for big cluster
+
+ ▪ project packages/apps/Email/
+ ▪ b76ada5 Fix check for deleted messages.
+ ▪ 70ccb25 Close body InputStreams correctly.
+
+ ▪ project packages/apps/Jelly/
+ ▪ dc48da6 Jelly: Don't add duplicates to the history
+ ▪ 78e3754 Jelly: Query an already ordered history
+ ▪ c8e5ebe Jelly: Enable the DOM storage API
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/Stk/
+ ▪ f9f50a5 Do not display toast if alpha text is null.
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ e353ae2 Properly close body InputStreams.
+
+ ▪ project vendor/cm/
+ ▪ a8b16ae Update pixel launcher
+
+ ▼ 05/28/2017
+
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 46f88be Merge 6f9bc767cff562a77d6a6aac0c8fb6edf3a7a08d on remote branch
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
 
+ ▪ project packages/apps/Settings/
+ ▪ 5de955c ButtonBacklight: Preview timeout once user stops dragging
+ ▪ f30a1b4 Configurations: Update button backlight brightness in real time
+
+ ▼ 05/27/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 669850a base: notifications: DEFAULT_LIGHTS and FLAG_SHOW_LIGHTS must count as noisy
+ ▪ 307bfad Frameworks AppOps: Enable MODE_IGNORED for OP_WAKE_LOCK
+ ▪ c34f0fe CaptivePortal: login activity UI improvements
+ ▪ e947bf6 Fix an apk icon animation corruption issue
+ ▪ 21dd4e8 Fix crash by IllegalStateException in sendAccessibilityEvent
+ ▪ 13091e7 Clean up pending broadcast receivers when force stopping package
+ ▪ 018ff90 base: enable power save config of system apps [1/2]
+ ▪ 9df3a9e Fix memory leak in WifP2pManager
+ ▪ 1b42b5b Add QS pulldown with one swipe on fp sensor [1/2]
+ ▪ 1ca6a17 SystemUI: Misc fixes for right (custom) lockscreen shortcuts
+
+ ▪ project packages/apps/DUI/
+
  ▪ project packages/apps/Jelly/
- ▪ ee20ec4 Jelly: Allow window.open() in javascript
- ▪ 8442f13 Jelly: search bar: always show the beginning of the url when loosing focus
- ▪ aa4b9db Jelly: Invert location permission check
- ▪ 2e5f147 Jelly: properly handle edittext search event
- ▪ 57049b9 Jelly: select url on search bar focus
- ▪ a0dea6a Jelly: use system editText for edit favorite dialog
- ▪ 00c26b2 Jelly: Switch to share chooser
+ ▪ 64920b0 Jelly: Fix some warnings
+ ▪ 503fea1 Jelly: Use lambdas in settings activity
+ ▪ 576d1b9 Jelly: Make download_message not specific to sdcard
+ ▪ 8f1365c Jelly: Handle screenLayout changes
 
  ▪ project packages/apps/Settings/
- ▪ 22974ab Fix screenshots delay default value
- ▪ 71280d1 Add me as Sirius maintainer (#758)
+ ▪ c018f90 QSPulldown: Remove FP gesture if device FP doesnt support it
+ ▪ 8be928a Settings:Optional lock to task icon in recents task header [2/2]
+ ▪ 2aa08c3 Settings: enable power save config of system apps [2/2]
+ ▪ a99ac4b Add QS pulldown with one swipe on fp sensor [2/2]
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 5c6b5a2 Add null check in Launcher onNewIntent() before moveToDefaultScreen().
+ ▪ 273db43 Handle OutOfMemoryException gracefully in WallpaperCropActivity.
+ ▪ 2846677 Fixing All apps not respecting scaled icon size
+ ▪ 14d0937 Adding workaround to jump in wallpaper offsets.
 
  ▪ project packages/services/OmniJaws/
 
- ▼ 04/21/2017
+ ▼ 05/26/2017
+
+
+ ▪ project device/qcom/common/
+ ▪ ebff3b2 power: use 8937 hal for 8953
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/25/2017
 
 
  ▪ project frameworks/base/
 
+ ▪ project hardware/samsung/
+ ▪ b0d8610 modemloader: Add support for recent devices
+
+ ▪ project packages/apps/Email/
+ ▪ c43715b Fix message duplication on flag update.
+
+ ▪ project packages/apps/Settings/
+ ▪ b6ee806 Remove Z010D maintainer  ;( (#769)
+
+ ▼ 05/24/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Email/
+ ▪ c0e5d54 Search in folder specified via URI parameter, if possible.
+
+ ▪ project packages/apps/Jelly/
+ ▪ c9f336c Jelly: Pause WebView along with the activity
+ ▪ c23c013 Jelly: Don't claim to be a simple WebView
+ ▪ c218521 Jelly: Define base class for Activities containing WebViewExt
+ ▪ 1607c0d Jelly: Make it easier to initiate gestures
+ ▪ 978e74e Jelly: Don't leak fileoutputstream if bm is null
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ 5462df5 Pass selected folder to message search.
+
+ ▪ project packages/services/OmniJaws/
+
+ ▼ 05/23/2017
+
+
+ ▪ project external/DUtils/
+ ▪ 52668d8 Killapp action: restore home screen before killing the app
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/DUI/
+ ▪ 59a68e6 SmartBar editor: block quick popup when dragging the button
+
+ ▪ project packages/apps/DeskClock/
+ ▪ 89aae76 DeskClock: Fix issues with flip/shake actions and poweroff alarm
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ 1d5c620 FlipFlap: add support for smaller View window covers
+
+ ▪ project packages/apps/Settings/
+ ▪ 46b451a Configurations:Add Some more Settings to Reset
+ ▪ 841d40b Avoid a NullPointerException in security
+ ▪ ad8e931 Optimized Code: call direct method to get integer extra
+ ▪ fef2b3d RejectedExecutionException  in DataUsageLIst
+ ▪ fb41cfd Optimize code on get UidDetail in AppDataUsage
+ ▪ e774dc4 Settings: Fix wrong wifi drawable in screen zooming preview
+ ▪ fab5b35 Avoid FC when entering Accessibility Settings with a font size of 100%
+ ▪ 4f798e7 DisplaySettings: font size in 5% steps from 80% to 130%
+ ▪ f6fe632 Correct fingerprint position during setup
+ ▪ f83f0cb PowerUsageFeatureProviderImpl: little cleanup
+ ▪ cdbcb1b Fix synchronization of Wi-Fi hotspot switch
+
+ ▪ project system/core/
+ ▪ 8f5e34c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+ ▪ project vendor/cmsdk/
+ ▪ af33af3 cmsdk: Add CMSettings option for QS auto brightness
+ ▪ 6bd7762 Protect system profiles related broadcasts
+
+ ▼ 05/22/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 3e04527c base: update updateUsbStateBroadcastIfNeeded types
+ ▪ fe1cfd9 Check and send usb state broadcast when devices boots
+ ▪ 7373362 Only send usb disconnect intents after boot.
+ ▪ ef0fcc2 fix KeyEvent can't correctly finish when inputmethod time out happened
+ ▪ 779a3e9 Fixed NPE in canAddMoreManagedProfiles
+ ▪ 60a339e Fix permissions for CTS [1/2]
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ 0174b30 Circle/Rectangle Views: adjust icon spacing/sizing
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/ResurrectionStats/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/21/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project frameworks/native/
+ ▪ a0c6b9f Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+ ▪ project packages/apps/Dialer/
+ ▪ afc79eb Dialer: lock screen appear before incoming call screen
+
+ ▪ project packages/apps/FlipFlap/
+ ▪ 04fc471 CircleView: always show clock
+
+ ▪ project packages/apps/Settings/
+ ▪ 1f45da1 Add Nougat maintainer Leeco LePro 3 (x720/x727) (#796)
+
+ ▪ project packages/services/OmniJaws/
+ ▪ c4e406d OwmniJaws Use own API key
+ ▪ 3d1c664 OmniJaws: fix OWM metric wind speed units
+ ▪ 299c137 OmniJaws: widget layout madness
+ ▪ 896d5fb OmniJaws: dont show OmniJaws error that prominent
+
+ ▪ project packages/services/ThemeInterfacer/
+ ▪ 2a46d48 Add interface to get API version and app authentication status
+ ▪ 8e55d57 Fix permissions for CTS [2/2]
+
+ ▼ 05/20/2017
+
+
+ ▪ project android/
+ ▪ 26c1bb4 manifest: track own ThemeInterfacer, and move to services
+
+ ▪ project build/
+ ▪ c698ef7 envsetup: fix small derp calling root method chooser script
+
+ ▪ project frameworks/base/
+ ▪ a99c136 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+ ▪ 81b97bf OMS: StrictMode and files under /data/system/theme/
+ ▪ 22d2286 Add protected broadcast for app crash broadcast
+ ▪ 452eb37 Update Drawer header
+ ▪ 185d71e Dont use CMSettings for Headset intents[1/2]
+ ▪ c711fa3 Settings left drawer: make the view more compact and show more entries per page
+ ▪ 6afb2ae Fix lag when opening an entry from the Settings left drawer
+ ▪ 08ad038 Option to Show Custom header in settings drawer [1/2]
+ ▪ 9efa551 Add SettingsDrawerActivity header
+ ▪ eccc096 Fix the Wi-Fi wrong status when turning Wi-Fi on
+ ▪ 759c96e Launch music player on headset connect: add BT compatibility [1/2]
+ ▪ 313bf88 Add navigation disabled notification [1/2]
+
  ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 41cd40d Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.15' into cm-14.1-caf-8916
+ ▪ 8fb7ce6 Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.02.254.025 on remote branch
 
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ ce39c30 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
+ ▪ project packages/apps/DUI/
 
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 434068f Fix duplicate copy file rules
+ ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 8829bce PackageInstaller: Show current & new version Forward ported to Marshmallow By: @dwitherell Forward ported to Nougat By: @BeansTown106
+ ▪ 2f4fee0 Fix PackageInstaller FC when tapping on a downloaded apk notification 2
+
+ ▪ project packages/apps/Settings/
+ ▪ 4fb4f6d Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+ ▪ 397950c Fix expandable desktop
+ ▪ 5af5556 Make sure to rebuild on app entries loaded
+ ▪ beff6c3 Don't re-populate the app list in rebuild()
+ ▪ 1a4cf52 Move Headset Settings out of CMSettings
+ ▪ fa02ac3 Option to show Settings header in settings drawer[2/2]
+ ▪ 9accf76 Launch music player on headset connect: add BT compatibility [2/2]
+
+ ▪ project packages/services/OmniJaws/
+
+ ▪ project vendor/cm/
+ ▪ 8b85edf cm: Remove root access prop
+
+ ▼ 05/19/2017
+
+
+ ▪ project build/
+ ▪ cc023f5 Merge remote-tracking branch 'rr/nougat' into nougat-dt
+ ▪ 1985266 Merge branch 'optional-root-method' into nougat
+ ▪ 179e18c rr: show buildtype in dumpvar, call root method type chooser script
+ ▪ 33381e4 Merge remote-tracking branch 'rr/nougat' into nougat-dt
+ ▪ 167b25a Merge branch 'optional-root-method' into nougat
+ ▪ 3c0ffb4 Revert "Revert "ota: Remove cruft we don't care about""
+ ▪ f800e5f apicheck_msg_current: Don't do this in LineageOS
+
+ ▪ project device/samsung/trlte-common/
+ ▪ 8fa90db audio: add bt-sco from shamu
+
+ ▪ project frameworks/av/
+ ▪ dc8b989 change cam params
+
+ ▪ project frameworks/base/
+ ▪ 6025aee Merge remote-tracking branch 'rr/nougat' into nougat-github
+ ▪ 45ec36e SystemUI: add option to set color for statusbar clock [2/2]
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 6f9bc76 Promotion of display.lnx.3.0.c2-00023.
+
+ ▪ project packages/apps/Jelly/
+ ▪ 7c65684 Jelly: EditTextExt: Remove shader before drawing
+ ▪ 0a0fcbd Jelly: Don't reload webview on screen rotation
+
+ ▪ project packages/apps/Settings/
+ ▪ 56bc28a Merge remote-tracking branch 'rr/nougat' into nougat-github
+ ▪ bf8c859 Add J500Y (#795)
+
+ ▪ project packages/apps/Snap/
+ ▪ 2ad1c08 Merge remote-tracking branch 'github/cm-14.1' into nougat
+
+ ▪ project packages/resources/devicesettings/
+
+ ▪ project vendor/cm/
+ ▪ 42f98f1 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
+ ▪ 8ead5c5 Merge branch 'optional-root-method' into nougat
+ ▪ b04becf Merge remote-tracking branch 'rr/nougat' into nougat-devtec
+ ▪ e959fdb Update Pixel launcher to O version
+ ▪ 3e16914 Merge branch 'optional-root-method' into nougat
+ ▪ 0901e93 extract_utils: fix extracting XML files containing binary characters
+ ▪ ac48cb6 cm: Remove Gello
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+
+ ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+ ▼ 05/18/2017
+
+
+ ▪ project frameworks/native/
+ ▪ 783b76e Merge cherrypicks of [2278225, 2279882, 2279862, 2278226, 2277057, 2279863, 2278227] into nyc-mr2-pixel-monthly-release
+ ▪ d01fe0a binder: remove cgroup interactions [ DO NOT MERGE ]
+ ▪ c41336b release-request-513a9883-0d18-4c2f-80ce-cadb234b4e89-for-git_nyc-mr2-pixel-monthly-release-3938523 snap-temp-L39300000065258774
+ ▪ 05c2380 release-request-513a9883-0d18-4c2f-80ce-cadb234b4e89-for-git_nyc-mr2-pixel-monthly-release-3938523 snap-temp-L39300000065258774 (snap-temp-branch)
 
  ▪ project hardware/qcom/fm/
 
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 5f3d105 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.12' into cm-14.1-caf-8994
-
  ▪ project hardware/samsung/
-
- ▪ project kernel/samsung/trlte/
- ▪ cbc83d7 F2FS: Catch up Jaegeuk's stable branch to v4.10-rc1-3.10
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
 
  ▪ project packages/apps/CMBugReport/
 
@@ -445,15 +815,9 @@
 
  ▪ project packages/apps/CellBroadcastReceiver/
 
- ▪ project packages/apps/DeskClock/
-
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
 
  ▪ project packages/apps/FMRadio/
 
@@ -461,35 +825,13 @@
 
  ▪ project packages/apps/Gallery2/
 
- ▪ project packages/apps/Gello/
-
- ▪ project packages/apps/Jelly/
- ▪ e468079 Jelly: add android.mk
- ▪ 0b331a3 Jelly: Don't add item if we're in incognito
- ▪ 5cf7e1a Jelly: Update android tools build
- ▪ fc1b3c3 Jelly: Don't parse null/empty url
- ▪ 60de878 Initial push
- ▪ c11c303 Initial commit
-
- ▪ project packages/apps/Messaging/
-
- ▪ project packages/apps/Profiles/
-
  ▪ project packages/apps/Recorder/
 
  ▪ project packages/apps/Settings/
- ▪ 304dc77 Fix the build up !
- ▪ 7b807dc Add Capricorn maintanier (#757)
- ▪ 9f4c631 Add Nougat Maintainer for LeEco Le Max2 (x2) (#755)
- ▪ 1257948 Settings: update string
 
  ▪ project packages/apps/SetupWizard/
 
  ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Terminal/
 
  ▪ project packages/apps/ThemeChooser/
 
@@ -499,135 +841,172 @@
 
  ▪ project packages/apps/UnifiedEmail/
 
- ▪ project packages/inputmethods/LatinIME/
+ ▪ project system/core/
+ ▪ 1346a40 Merge cherrypicks of [2278225, 2279882, 2279862, 2278226, 2277057, 2279863, 2278227] into nyc-mr2-pixel-monthly-release
+ ▪ 31f78dd libcutils: remove schedgroup fds [DO NOT MERGE]
+ ▪ f388bab init.rc: remove bg_non_interactive cgroup [ DO NOT MERGE ]
+ ▪ 783a787 libcutils: only change cgroup when fd is initialized [ DO NOT MERGE ]
+ ▪ 60a4705 release-request-513a9883-0d18-4c2f-80ce-cadb234b4e89-for-git_nyc-mr2-pixel-monthly-release-3938523 snap-temp-L39300000065258774
 
- ▪ project packages/providers/ContactsProvider/
+ ▪ project vendor/cm/
+ ▪ 782912b rr: add in a script to choose root variant
 
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/ThemesProvider/
-
- ▪ project packages/providers/WeatherProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/services/CMAudioService/
-
- ▪ project packages/services/LiveLockScreenService/
-
- ▪ project packages/services/OmniJaws/
-
- ▪ project packages/services/ThemeManagerService/
-
- ▪ project packages/services/WeatherService/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 04/20/2017
+ ▼ 05/17/2017
 
 
- ▪ project android/
- ▪ 30d3069 crowdin: fix sync
-
- ▪ project frameworks/base/
- ▪ f1e008a SystemUI:Notification bar custom notification display problems
- ▪ d44c3f3 BT: Update wait function in ManagerService to handle  BLE states
- ▪ e5e5b09 SystemUI: Fix QSTileHost exception
- ▪ 8a62038 SystemUI: [RJIL new function] AutoBrightness
- ▪ 3f767d0 SystemUI: Fix SystemUI ANR
+ ▪ project frameworks/native/
+ ▪ c68520a sensorservice: Fix orientation sensor for HAL's missing rotation vector sensor
 
  ▪ project packages/apps/DUI/
- ▪ eaf848b DUI: Basenavigationbar: Catch Slippery Exception
 
- ▪ project packages/apps/Dialer/
+ ▪ project packages/apps/Settings/
+ ▪ a1d362b Mi Mix (Lithium) maintainer change (#794)
+ ▪ 3774bb8 add Jiayu S3 maintainer (#793)
 
- ▼ 04/19/2017
+ ▼ 05/16/2017
 
 
- ▪ project android/
- ▪ d1362da [2/2] crowdin: add OmniJaws
-
- ▪ project external/boringssl/
- ▪ 84b7017 Make CRYPTO_is_NEON_capable aware of the buggy CPU.
- ▪ 7609007 Don't set a default armcap state in dynamic armcap modes.
- ▪ 733592a Rewrite ARM feature detection.
- ▪ d50af31 Remove CRYPTO_set_NEON_functional.
+ ▪ project build/
+ ▪ ca236d8 rr: optional root methods [2/2]
 
  ▪ project frameworks/base/
- ▪ 3da5ccc Improve Hw keys Tile
- ▪ 9703f9a Add vpn and data saver to statusbar icon blacklist *fixed vpn toggle it is now instant
- ▪ a04a27f Make Data/Wifi activity icon in statusbar optional [1/2]
- ▪ 6591688 Data activity icon in statusbar
- ▪ 88921e1 SystemUI: Add tile for enable/disable HW keys
- ▪ bc651fe fix wrong algorithm in WifiPowerPerPacket()
- ▪ 2313020 FATAL EXCEPTION IN SYSTEM PROCESS: android.ui
- ▪ 8776352 Ticker:Set default color to White [1/2]
- ▪ f8609ef Fix missing lockscreen shortcut icons after reboot
- ▪ 0d36175 Themes: Allow volume slider and thumb to work with custom images.
- ▪ 8355307 Separate tile label color from icon drawable color
- ▪ 11576a8 Basestatusbar:Fix Headsup Not Working
- ▪ 036a71d Fix Another Illegal Argument Exception when Changing DPI
- ▪ 0c31a30 base:Optional weather info in expanded header [1/2]
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ bef8fb0 Merge "sdm: Set layer frame rate if not specified."
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/OmniSwitch/
+
+ ▪ project packages/apps/Settings/
+
+ ▪ project system/sepolicy/
+ ▪ 3797a6e Merge pull request #3 from ashoksoni/nougat
+ ▪ a688894 sepolicy: Allow system_server to set theme_prop
+
+ ▪ project vendor/cm/
+ ▪ 2bfdf69 rr: add optional root methods [1/2]
+
+ ▼ 05/15/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project packages/apps/AudioFX/
+ ▪ e696bf0 AudioFX: Fix choppy preset transitions
+
+ ▪ project packages/apps/DUI/
 
  ▪ project packages/apps/Dialer/
+
+ ▪ project packages/apps/Settings/
+ ▪ 05e6b1e Add a new device Htc One S(Ville) to Device Maintaners list. (#791)
+
+ ▪ project system/keymaster/
+ ▪ a1bbfc0 Fix bugs regarding KeyStore::isHardwareBacked always returning true.
+
+ ▼ 05/14/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 6e8e9c5 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/display-caf/msm8996/
+ ▪ 332f57a Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project hardware/qcom/media-caf/msm8996/
+ ▪ 87965a0 Merge tag 'LA.UM.5.5.r1-04600-8x96.0' into HEAD
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/Jelly/
+ ▪ eab04da Jelly: lint cleanup
+ ▪ a8dcb76 Jelly: Don't sign the app with a system certificate
+ ▪ 5e5fb97 Jelly: Fix storage permission check
+ ▪ c315497 Jelly: add Desktop mode toggle
+ ▪ 5859bc6 Jelly: Actually disable cookies
+ ▪ fd7418e Jelly: Flush cookies when calling onStop()
+ ▪ eb6375d Jelly: Don't make app persistent
+ ▪ 2d4853b Jelly: Add proguard rules
+ ▪ d583aad Jelly: Improve URL/search query handling
+ ▪ 21c6894 Jelly: strings: Various pedantics
+
+ ▪ project packages/apps/Settings/
+ ▪ 565e211 Add Scorpio & Lithium maintanier (#790)
+
+ ▼ 05/13/2017
+
+
+ ▪ project frameworks/base/
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 23be04d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
+
+ ▪ project packages/apps/DUI/
+
+ ▪ project packages/apps/DeskClock/
+ ▪ 7859d63 Revert "Fix alarm not firing in memory-pressure situations"
+
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/Settings/
+
+ ▼ 05/12/2017
+
+
+ ▪ project frameworks/base/
+ ▪ 59afca8 fix build
+ ▪ d3fff6c incall vibration options [1/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
+ ▪ 6a61a8f frameworks/base: reduce the setTransactions
+ ▪ 4c50d5e hwui: skip draw empty frame
+ ▪ 9a1acd4 Stop holding mProxyLock while downloading PAC script data.
+ ▪ c065fdd sensors: fix native crash when dynamic sensor is removed
+ ▪ c5b1119 sensors: intern jstrings for memory savings
+ ▪ b8ca031 NullPointerException: Attempt to invoke virtual method 'int android.os.Parcel.dataSize()' on a null object reference
+ ▪ 147dc3b Keyguard: disable logspilling debug
+ ▪ 9ba0ce5 Fix carrier label not getting scaled properly
+ ▪ 33c5cab StatusBar: Catch OOM caused by third-party icons
+ ▪ 3d1c711 The network event should be an asynchronous callback.
+ ▪ ebf3cbe wifi: catch UnsupportedOperationException for getMatchingWifiConfig
+ ▪ b79fd00 SettingsLib: wifi: Fixed AccessPoint tracking for Passpoint networks
+ ▪ 492cf86 Destroy Allocation right away on exception
+ ▪ 2e58436 Destroy Allocation with ScriptIntrinsicLut
+ ▪ 4c1a6e9 Aapt2: Fix png leak
+ ▪ e5e4571 Deadlock in PackageInstallerSession
+ ▪ 8465fcf Save "mState.restored" in onSaveInstanceState of FilesActivity
+ ▪ c0d9ee2 Avoid deadlock when installing app
+ ▪ e7be227 Resolve deadlock between ActivityManagerService and PowerManagerService
+ ▪ d2a6ccc OBEX : Handle Negative index Exception
+ ▪ 7492ebd ExtShared build as priv-app
+ ▪ 8b797f8 Fix dead lock in Tethering state machine
+ ▪ 3383e64 Skip ListPopupWindow position update if detached
+ ▪ 385f7d6 Fix system server crash caused by CME in usage stats
+ ▪ 11ef661 Fix NPE while attempting to get length of null array in FileRotator
+ ▪ 3b26d60 Fix NPE in SettingsLib
+ ▪ 6c32d05 Validate handler of wakelock option for flashlight.
+
+ ▪ project packages/apps/DUI/
+ ▪ 5d95ee1 Improve MediaMonitor readability
+ ▪ d450ac0 DUI: Fix Smartbar back button hiding on lockscreen intents
+
+ ▪ project packages/apps/Dialer/
+ ▪ 24f39ef Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Dialer into nougat
+ ▪ 4ad8faa Dialer:Remove redundant vibration options for InCallUI
 
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ dea4c30 add device vega (#754)
- ▪ c5ce86a Settings: Fix ugly whitespacing and build
- ▪ 5e5d45c add maintainer for clark, flounder, manta, vs980, d2lte, and tenderloin (#753)
+ ▪ debffd2 Settings:Incall Vibration options [3/3]
 
- ▼ 04/18/2017
+ ▪ project packages/services/Telecomm/
+ ▪ 566782e Use double vibration on hang-up call
+ ▪ 14a1774 incall vibration options [2/3] *allow setting vibration when call is connected *allow setting vibration when call is disconnected *allow setting vibration for call waiting *this works with google and aosp dialer :)
 
-
- ▪ project external/libchrome/
- ▪ dc9036a Disable all NEON in BoringSSL if has_broken_neon is set.
-
- ▪ project frameworks/opt/telephony/
- ▪ 71c8c95 GsmCdmaPhone: Fix GSM SIM card ICCID on NV sub CDMA devices
-
- ▪ project packages/apps/Dialer/
- ▪ a5b497f Dialpad: option to show dialpad automatically (#1)
-
- ▪ project packages/apps/Settings/
- ▪ e2bb742 Fix 7.1.2 mismerge
- ▪ b6aa3ee Option to disable data & wifi indicators
- ▪ cf61891 Add HWkeys Settings as an activity
- ▪ 08a6aa1 Ticker:Set default colors to white [2/2]
-
- ▪ project system/extras/
- ▪ b5332df Update verity_verifier from master branch
- ▪ 196ed2f verity: Include libcrypto_utils_static
- ▪ 252fe23 Revert "Revert "Switch to BoringSSL for crypto.""
- ▪ 442b784 Revert "Switch to BoringSSL for crypto."
-
- ▼ 04/17/2017
-
-
- ▪ project android/
- ▪ 34db8bf Revert "Sync infra-related projects"
-
- ▪ project device/samsung/trlte-common/
- ▪ 6bff28c trlte: Enable FlipFlap
-
- ▪ project hardware/libhardware_legacy/
- ▪ 372a36e wifi: Change USES_TI_MAC80211 to a BoardConfig flag
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
- ▪ 8a346c2 Add Headsup Settings as an Activity
- ▪ cad32b8 Update Z2 Tablet Maintainer
- ▪ 1e7d35b Optional Expanded statusbar Weather info [2/2]
+ ▪ project system/core/
+ ▪ 6e8ac8f Merge cherrypicks of [2247380, 2246315, 2247358] into nyc-mr2-pixel-monthly-release
+ ▪ 278ee6b libcutils: remove schedgroup fds [DO NOT MERGE]
 
