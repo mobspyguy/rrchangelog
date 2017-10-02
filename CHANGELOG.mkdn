@@ -2,18 +2,44 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 10/02/2017
+
+
+ ▪ project device/samsung/trlte-common/
+ ▪ 6e412ce trtrlte-common: set correct led sys paths and clean up
+ ▪ 2bf2b12 trlte-common: switch from Gello to Jelly Browser
+
+ ▪ project kernel/samsung/trlte/
+ ▪ aa85c76 arch/arm/config: enable kcal support
+ ▪ 0360b27 drivers/video/msm/mdss: enabling KCAL by default...
+ ▪ 741e43e msm: mdss: kcal: Only apply updates on index 0
+ ▪ ca4615b msm: mdss: kcal: Use PCC for negative display mode
+ ▪ a92b5bf msm: mdss: KCAL: Send a pp display commit when changes are made
+ ▪ 989a6da msm: mdss: KCAL: Do not read from picture adjustment registers
+ ▪ 44bef46 msm: mdss: KCAL: Read values from MDP registers wherever possible
+ ▪ 4a04375 msm: mdss: KCAL: Apply default values on boot
+ ▪ 567640e msm: mdss: KCAL: Queue changes when panel is powered off
+ ▪ d0fcc21 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
+ ▪ 3f0381d msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
+ ▪ 9b923f1 msm: mdss: KCAL: Check panel power state before applying values
+ ▪ bc545fb msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
+ ▪ 7e55151 msm: mdss: Add KCAL support for post processing control [v2]
+
  ▼ 09/30/2017
 
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 897b8bc kernel/config: activate intelli_plug
  ▪ 5be1550 intelli_plug: intelligent hotplug cpu driver with eco mode Signed-off-by: Paul Reioux <reioux@gmail.com> Signed-off-by: sunilpaulmathew <sunil.kde@gmail.com>
  ▪ 137c691 drivers/cpufreq: Adding 12 cpufreq govs alucard, blu_active, conservativex, dancedance, intelliactive, _interactive_pro, lionheart, nightmare, ondemandplus, smartmax, wheatley & yankactive
 
+ ▼ 09/29/2017
+
+
  ▪ project packages/apps/Settings/
  ▪ 47d0991 [2/4] Settings: add burnIn protection setting
 
- ▼ 09/29/2017
+ ▼ 09/28/2017
 
 
  ▪ project device/samsung/trlte-common/
@@ -22,25 +48,11 @@
  ▪ 49c723e trlte: replace $(LOCAL) with Full Path fs: update partition sizes
  ▪ f603c56 trlte: set f2fs before ext4
  ▪ b2de5ba trlte: cmhw update
-
- ▼ 09/28/2017
-
-
- ▪ project device/samsung/trlte-common/
  ▪ 6a86fd7 trlte: add WBS to bluetooth
  ▪ f6595b5 trlte: add encryptable to f2fs
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 4cfe1ef driver: add MobiCore Api
-
- ▪ project vendor/cmsdk/
- ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
- ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
- ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
- ▪ f4da7ec Make CMParts a protected component manager
- ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
- ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
- ▪ cf42384 cmsdk: Disable unused services
 
  ▼ 09/27/2017
 
@@ -54,12 +66,6 @@
  ▪ project frameworks/base/
  ▪ 48e1c80 Merge remote-tracking branch 'rr/nougat' into nougat-github
 
- ▪ project kernel/samsung/apq8084/
- ▪ dfdee4b battery: Force fast charging (AC/USB) by Yank555.lu battery: AOSP expects microamperes
- ▪ 6b37075 cpu: add AutoSMP hotplug
- ▪ 9f4743f CPU: add CPU Frequency settings
- ▪ b775026 arm: add support for LZ4-compressed kernel
-
  ▪ project packages/apps/Snap/
  ▪ dc4445a Merge remote-tracking branch 'github/cm-14.1' into nougat
 
@@ -70,6 +76,15 @@
  ▪ 8fce6ae update substratum V853
  ▪ e154c93 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
 
+ ▪ project vendor/cmsdk/
+ ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
+ ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
+ ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
+ ▪ f4da7ec Make CMParts a protected component manager
+ ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
+ ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
+ ▪ cf42384 cmsdk: Disable unused services
+
  ▪ project vendor/samsung/
  ▪ eb4f2b1 update trltexx blobs to QG5
 
@@ -79,7 +94,11 @@
  ▪ project external/libnfc-nci/
  ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
+ ▪ dfdee4b battery: Force fast charging (AC/USB) by Yank555.lu battery: AOSP expects microamperes
+ ▪ 6b37075 cpu: add AutoSMP hotplug
+ ▪ 9f4743f CPU: add CPU Frequency settings
+ ▪ b775026 arm: add support for LZ4-compressed kernel
  ▪ 23d4c27 ecryptfs: fix ecryptfs_mount_crypt_stat issue
  ▪ daea689 crypto: lz4,lz4hc - fix decompression
  ▪ fc23033 crypto: add lz4 Cryptographic API
@@ -152,24 +171,29 @@
  ▪ project vendor/cm/
  ▪ ed3107d RR: v5.8.5
 
- ▼ 09/22/2017
+ ▼ 09/21/2017
 
 
  ▪ project frameworks/base/
 
+ ▪ project packages/apps/FlipFlap/
+ ▪ 484ba97 FlipFlap: Specify a qualified user for start/stop service
+
  ▪ project packages/apps/Settings/
 
- ▼ 09/21/2017
+ ▼ 09/20/2017
 
 
  ▪ project hardware/cyanogen/
  ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
 
  ▪ project packages/apps/FlipFlap/
- ▪ 484ba97 FlipFlap: Specify a qualified user for start/stop service
  ▪ d27b7eb FlipFlap: Allow to set dot ratio
 
- ▼ 09/20/2017
+ ▪ project system/extras/su/
+ ▪ 11730a5 correct delivering process return code to caller
+
+ ▼ 09/19/2017
 
 
  ▪ project frameworks/av/
@@ -177,14 +201,6 @@
 
  ▪ project frameworks/native/
  ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
- ▪ project packages/apps/Eleven/
-
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
- ▼ 09/19/2017
-
 
  ▪ project hardware/qcom/fm/
 
@@ -201,6 +217,8 @@
  ▪ project packages/apps/CertInstaller/
 
  ▪ project packages/apps/DeskClock/
+
+ ▪ project packages/apps/Eleven/
 
  ▪ project packages/apps/Email/
 
@@ -273,9 +291,6 @@
  ▪ project packages/apps/Eleven/
  ▪ 49b8b9c Eleven: Create one cursor per background task
 
- ▪ project packages/apps/Settings/
- ▪ efbb78f Add moderator tags to about settings
-
  ▼ 09/17/2017
 
 
@@ -313,6 +328,7 @@
  ▪ project packages/apps/OmniSwitch/
 
  ▪ project packages/apps/Settings/
+ ▪ efbb78f Add moderator tags to about settings
  ▪ 6d05ff9 Back-port ag/2491664
  ▪ 2214a57 AppOpsDetails: Generate correct summary when changing list prefs
  ▪ ac086f6 Settings: Allow devices to provide remote gesture preferences
@@ -405,7 +421,7 @@
  ▼ 09/15/2017
 
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 65ef3e2 Bluetooth: Properly check L2CAP config option output buffer length
 
  ▪ project packages/apps/AudioFX/
@@ -413,8 +429,6 @@
  ▪ b94e30b AudioFX: set theme accent to white
  ▪ 00d3381 AudioFX: match control switches color with fragment background
  ▪ f5d78ad AudioFX: Add Reverb toggle
- ▪ 9fe5a3a AudioFX: Use default material toggle
- ▪ 9662067 AudioFX: Apply effects independently of the output flags
 
  ▪ project system/bt/
  ▪ 215d434 Add missing extension length check while parsing BNEP control packets
@@ -424,6 +438,13 @@
  ▪ 7e30b79 Add missing continuation offset check for SDP continuation requests
  ▪ 0700e5b Disable PAN Reverse Tethering when connection originated by the Remote
  ▪ 8825957 Allocate buffers of the right size when BT_HDR is included
+
+ ▼ 09/14/2017
+
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 9fe5a3a AudioFX: Use default material toggle
+ ▪ 9662067 AudioFX: Apply effects independently of the output flags
 
  ▼ 09/12/2017
 
@@ -441,11 +462,8 @@
  ▪ project hardware/qcom/media-caf/msm8974/
  ▪ 209a13c mm-video-v4l2: venc: Protect buffer from being freed while accessing
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 1f78e9a apq8084: ipa: remove redundant NULL pointer check
-
- ▪ project packages/apps/Jelly/
- ▪ 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
 
  ▪ project packages/apps/TvSettings/
  ▪ acace0c Use new updater activity name for update button
@@ -519,7 +537,7 @@
  ▪ 914d3bc media: Avoid collision with FFMPEG plugin
  ▪ 71d6868 media: Use project pathmap
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ e248899 net: wireless: bcmdhd: adding boudary check in wl_escan_handler
  ▪ 46c4ee2 net: wireless: bcmdhd: adding boundary check for pfn events
  ▪ 4f33b40 net: wireless: bcmdhd: Remove "dhd_handle_swc_evt" from dhd.
@@ -527,8 +545,8 @@
  ▪ b00eb74 net: wireless: bcmdhd: adding boundary check in wl_notify_rx_mgmt_frame
  ▪ 9e286dd net: wireless: bcmdhd: add boundary check in dhd_rtt_event_handler
 
- ▪ project vendor/cm/
- ▪ 2358ac4 update substratum V823
+ ▪ project packages/apps/Jelly/
+ ▪ 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
 
  ▼ 09/09/2017
 
@@ -538,18 +556,15 @@
 
  ▪ project frameworks/base/
  ▪ e1a287b Merge remote-tracking branch 'rr/nougat' into nougat-github
- ▪ fd3a9e3 Merge pull request #208 from BernardoBas/nougat
 
  ▪ project packages/apps/DeskClock/
  ▪ 6c3941b DeskClock: Remove POWER_OFF_ALARM intent leftovers
-
- ▪ project packages/apps/Settings/
- ▪ 924a9c6 Add J5H to the list (#864)
 
  ▪ project packages/apps/Snap/
  ▪ ba7547f Merge remote-tracking branch 'github/cm-14.1' into nougat
 
  ▪ project vendor/cm/
+ ▪ 2358ac4 update substratum V823
  ▪ 00bc98b Merge remote-tracking branch 'rr/nougat' into nougat-devtec
  ▪ 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
 
@@ -557,6 +572,7 @@
 
 
  ▪ project frameworks/base/
+ ▪ fd3a9e3 Merge pull request #208 from BernardoBas/nougat
  ▪ cf0fd01 Fix not to disable the GPS prematurely
 
  ▪ project hardware/qcom/audio-caf/msm8994/
@@ -568,7 +584,7 @@
  ▪ project hardware/qcom/media-caf/msm8994/
  ▪ 5142d75 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 32058e4 msm: camera: Allow driver file to be opend only once.
  ▪ 2f15710 msm: camera: fix off-by-one overflow in msm_isp_get_bufq
  ▪ 116d90c msm: camera: isp: fix for out of bound access array
@@ -577,7 +593,7 @@
  ▪ c97713d msm: msm_bus: Fix architecture dependant types
 
  ▪ project packages/apps/Settings/
- ▪ 2683f89 I've changed my name (#862)
+ ▪ 924a9c6 Add J5H to the list (#864)
 
  ▼ 09/07/2017
 
@@ -585,24 +601,27 @@
  ▪ project hardware/qcom/audio-caf/msm8974/
  ▪ 00b7019 aenc-aac: bounds checking
 
- ▪ project hardware/qcom/media-caf/apq8084/
- ▪ 477e1d7 mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ f946720 ASoC: msm: qdsp6v2: extend validation of virtual address
  ▪ 7c89901 ASoC: msm: remove unused msm-compr-q6-v2
  ▪ 1f754ed qcacld-2.0: Avoid concurrent matrix max param overread
  ▪ 53e95df msm: ipa: fix security issues in ipa wan driver
  ▪ ece9675 ion: Fix unprotected userspace access
  ▪ eb16fd1 mm: Fix incorrect type conversion for size during dma allocation
- ▪ 9339276 arm64: Fix out of bound access to compat_hwcap_str
- ▪ 30be0f6 ipx: call ipxitf_put() in ioctl error path
- ▪ 79f1483 apq8084: inet_csk_clone_lock: reorder statements to align to upstream
+
+ ▪ project packages/apps/Settings/
+ ▪ 2683f89 I've changed my name (#862)
 
  ▼ 09/06/2017
 
 
- ▪ project kernel/samsung/apq8084/
+ ▪ project hardware/qcom/media-caf/apq8084/
+ ▪ 477e1d7 mm-video-v4l2: venc: Protect buffer from being freed while accessing
+
+ ▪ project kernel/samsung/trlte/
+ ▪ 9339276 arm64: Fix out of bound access to compat_hwcap_str
+ ▪ 30be0f6 ipx: call ipxitf_put() in ioctl error path
+ ▪ 79f1483 apq8084: inet_csk_clone_lock: reorder statements to align to upstream
  ▪ bcf6d32 qcacld: Increase SSR timeout to 30 seconds
  ▪ 19b5670 qcacld-2.0: Do not allow NoA setting in non P2P GO mode
  ▪ 8f6797d qcacld-2.0: Fix agc registers dump logic to avoid fw assert
@@ -611,23 +630,8 @@
  ▼ 09/05/2017
 
 
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ da13543 Merge 6172a26352b462c0201cf3a2571631a2df8b4df9 on remote branch
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ b9cc6fd Merge 1a05f07a6fff81aa44d8016f1047d922fbbbce02 on remote branch
-
- ▪ project kernel/samsung/apq8084/
+ ▪ project kernel/samsung/trlte/
  ▪ 09c46d1 apq8084: defconfig: fix earjack settings
  ▪ 9a5a725 apq8084: w1: Fix call order when adding slave device
  ▪ 439c58a Revert "apq8084: ehci: hsic: try harder to get rid of wakelock"
-
- ▼ 09/04/2017
-
-
- ▪ project packages/apps/SetupWizard/
- ▪ f7d9926 SetupWizard: Fix the accessibility services gesture
-
- ▪ project packages/apps/Snap/
- ▪ fef825d Snap: fix highspeed and high-framerate video recording
 
