@@ -2,636 +2,222 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 10/02/2017
+ ▼ 10/23/2017
 
 
  ▪ project device/samsung/trlte-common/
- ▪ 6e412ce trtrlte-common: set correct led sys paths and clean up
- ▪ 2bf2b12 trlte-common: switch from Gello to Jelly Browser
+ ▪ 66108b4 trlte-common: clean up
+ ▪ 4819785 trlte-common: remove unused media codec
+ ▪ 1fddc7a trlte-common: wpa_supplicant_overlay.conf: remove unused p2p_disabled=1 p2p_supplicant_overlay.conf: set p2p_disabled=0 to enable Wifi Direct
+ ▪ 80256da trlte-common: remove device wpa_supplicant.conf change macloader service start
 
- ▪ project kernel/samsung/trlte/
- ▪ aa85c76 arch/arm/config: enable kcal support
- ▪ 0360b27 drivers/video/msm/mdss: enabling KCAL by default...
- ▪ 741e43e msm: mdss: kcal: Only apply updates on index 0
- ▪ ca4615b msm: mdss: kcal: Use PCC for negative display mode
- ▪ a92b5bf msm: mdss: KCAL: Send a pp display commit when changes are made
- ▪ 989a6da msm: mdss: KCAL: Do not read from picture adjustment registers
- ▪ 44bef46 msm: mdss: KCAL: Read values from MDP registers wherever possible
- ▪ 4a04375 msm: mdss: KCAL: Apply default values on boot
- ▪ 567640e msm: mdss: KCAL: Queue changes when panel is powered off
- ▪ d0fcc21 msm: mdss: KCAL: Remove MODULE_DESCRIPTION
- ▪ 3f0381d msm: mdss: KCAL: Update according to linux guidelines and checkpatch.pl
- ▪ 9b923f1 msm: mdss: KCAL: Check panel power state before applying values
- ▪ bc545fb msm: mdss: KCAL: Allow kcal_enable to control all post-processing features
- ▪ 7e55151 msm: mdss: Add KCAL support for post processing control [v2]
+ ▪ project packages/apps/Dialer/
+ ▪ 692c0ef Merge pull request #3 from CyberWalkMaN/nougat
 
- ▼ 09/30/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ 897b8bc kernel/config: activate intelli_plug
- ▪ 5be1550 intelli_plug: intelligent hotplug cpu driver with eco mode Signed-off-by: Paul Reioux <reioux@gmail.com> Signed-off-by: sunilpaulmathew <sunil.kde@gmail.com>
- ▪ 137c691 drivers/cpufreq: Adding 12 cpufreq govs alucard, blu_active, conservativex, dancedance, intelliactive, _interactive_pro, lionheart, nightmare, ondemandplus, smartmax, wheatley & yankactive
-
- ▼ 09/29/2017
-
-
- ▪ project packages/apps/Settings/
- ▪ 47d0991 [2/4] Settings: add burnIn protection setting
-
- ▼ 09/28/2017
+ ▼ 10/22/2017
 
 
  ▪ project device/samsung/trlte-common/
- ▪ 0e88bc5 trlte: Add support for 2160p media profile
- ▪ defb8ad liblights: Remove device level HAL
- ▪ 49c723e trlte: replace $(LOCAL) with Full Path fs: update partition sizes
- ▪ f603c56 trlte: set f2fs before ext4
- ▪ b2de5ba trlte: cmhw update
- ▪ 6a86fd7 trlte: add WBS to bluetooth
- ▪ f6595b5 trlte: add encryptable to f2fs
+ ▪ 3c46af0 trlte-common: disable preopt
+
+ ▪ project hardware/qcom/bootctrl/
+ ▪ 462212d Add msm8953 to the filter
+
+ ▪ project hardware/ril-caf/
+ ▪ 8cca2b8 DO NOT MERGE Fix security vulnerability in pre-O rild code.
 
  ▪ project kernel/samsung/trlte/
- ▪ 4cfe1ef driver: add MobiCore Api
+ ▪ c07538d sdcardfs: fix space leak
+ ▪ 2641b7b ANDROID: sdcardfs: Add missing break
+ ▪ 04d74c1 ANDROID: Sdcardfs: Move gid derivation under flag
+ ▪ a182909 ANDROID: sdcardfs: override credential for ioctl to lower fs
 
- ▼ 09/27/2017
+ ▪ project packages/apps/Dialer/
+ ▪ 2514f37 Squashed support for multilanguage T9 dialer (1/2)
+ ▪ 04a303b Dialer: Provide upgrade path for removed lookup providers
+ ▪ d133d0b Dialer: Fix compilation warnings
+ ▪ 4044ee5 Dialer: Move padding from layout to spinner
+ ▪ 69cc1dc BUGBASH-612: do not send phone numbers to non-ssl sites for reverse/forward/people lookups
 
-
- ▪ project build/
- ▪ 50ba1b8 Merge remote-tracking branch 'rr/nougat' into nougat-dt
-
- ▪ project frameworks/av/
- ▪ 18b18ab change cam params
-
- ▪ project frameworks/base/
- ▪ 48e1c80 Merge remote-tracking branch 'rr/nougat' into nougat-github
-
- ▪ project packages/apps/Snap/
- ▪ dc4445a Merge remote-tracking branch 'github/cm-14.1' into nougat
-
- ▪ project system/sepolicy/
- ▪ 03131a0 themeinterfacer.te entfernt #
-
- ▪ project vendor/cm/
- ▪ 8fce6ae update substratum V853
- ▪ e154c93 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
-
- ▪ project vendor/cmsdk/
- ▪ 8f4f039 [3/3] cmsdk: add burnIn protection setting
- ▪ 10d64e7 Revert "cmsdk: Don't change ring volume or mode if DND is enabled"
- ▪ 253a12e cmsdk: Run in core apps only for poweroff alarm boot
- ▪ f4da7ec Make CMParts a protected component manager
- ▪ a5a86a8 cmsdk: Don't change ring volume or mode if DND is enabled
- ▪ 6f9c3e4 cmsdk: Use intent extradata for WiFi triggers
- ▪ cf42384 cmsdk: Disable unused services
-
- ▪ project vendor/samsung/
- ▪ eb4f2b1 update trltexx blobs to QG5
-
- ▼ 09/26/2017
+ ▼ 10/20/2017
 
 
- ▪ project external/libnfc-nci/
- ▪ 257864a pn54x: Don't default to pn551 if BOARD_NFC_CHIPSET isn't set
+ ▪ project hardware/ril-caf/
+ ▪ 3819865 Merge "Fix VTS HAL Radio tests" (reverted from commit 2c215429a4512707c6d9de6d09eb415bad581b70)
+ ▪ 2c21542 Merge "Fix VTS HAL Radio tests"
 
  ▪ project kernel/samsung/trlte/
- ▪ dfdee4b battery: Force fast charging (AC/USB) by Yank555.lu battery: AOSP expects microamperes
- ▪ 6b37075 cpu: add AutoSMP hotplug
- ▪ 9f4743f CPU: add CPU Frequency settings
- ▪ b775026 arm: add support for LZ4-compressed kernel
- ▪ 23d4c27 ecryptfs: fix ecryptfs_mount_crypt_stat issue
- ▪ daea689 crypto: lz4,lz4hc - fix decompression
- ▪ fc23033 crypto: add lz4 Cryptographic API
-
- ▼ 09/25/2017
-
-
- ▪ project frameworks/base/
- ▪ 95ba21f PhoneWindowManager: Block screenshots when pocket lock is showing
- ▪ 51c0f6f PocketService: Adjust light sensor rate to 400ms
- ▪ 31e374f ActivityManager: Remove POWER_OFF_ALARM intent leftover
- ▪ 8cf55f1 SystemServer: Don't start widget service when it is alarm boot
- ▪ 8f62033 Recents: Add accessibility descriptions for lock ImageViews
- ▪ 65748c4 SystemUI: Revert some Tuner changes
- ▪ 71bfe49 DUtils: Migrate from broadcasts to API for some action handling [1/2]
- ▪ f99120e ColorEngine: Fixup themes for our customizations[2/3] *Update Primary and secondary coolors *Update TM Fab bg *Update Stroke accent colors *Thanks to ALtan for control_checkable_material theme issue
- ▪ e90fec8 Revert "FWB:Update default theme to Pixel Blue [1/2]"
- ▪ a3d99a6 Themes: Expose manifest styles for themes
- ▪ a3dab8d Bring back Pixel theme [1/2]
- ▪ 27dc140 BrightnessSlider: Fix Slider thumb not theming to accent color
- ▪ 90dfe02 Revert "sysui: New google pixel colors"
- ▪ ad41af3 Revert "Base : Finalize the pixel theme and prepare for theme engine"
- ▪ 5c1386f Revert "base: New google pixel colors"
- ▪ ec7bf0d FWB:Update default theme to Pixel Blue [1/2]
- ▪ 32ba76a Partially revert "ColorEngine: theme improvements/completeness"
- ▪ 79a4136 ColorEngine: fix power menu instant theming
- ▪ 69ca41e TileAdapter: allow styling tile item decoration background
- ▪ 98726ae ColorEngine: theme improvements/completeness
- ▪ 2bf21f4 ColorEngine: fwb: keep changed resources footprint low
- ▪ 17c72a1 ColorEngine: fwb: default to default primary/bg color
- ▪ 3eca4dd ColorEngine: who wants orange if you can have amber [1/2]
- ▪ 5b5e499 ColorEngine: fwb: default to teal color accent everywhere
- ▪ 453e33b ColorEngine: default to teal color accent
- ▪ ba42305 Introduce color engine.
- ▪ d796bc5 Revert "FW: Use stock pixel color scheme & improve upcoming CMTE compatibility"
-
- ▪ project packages/apps/DUI/
- ▪ b79ce98 DUI:Fix up accent colors with color engine[3/3]
-
- ▪ project packages/apps/OmniSwitch/
-
- ▪ project packages/apps/Settings/
- ▪ 523231c Add Andres to About
- ▪ 3c520f0 Settings:Fix up RR configurations theme with color engine[1/3]
- ▪ bb8b8d3 ColorEngine: Settings: keep changed resources footprint low
- ▪ 62b94cf ColorEngine: Settings: default to default primary/bg color
- ▪ 2244d5d ColorEngine: Settings: default to pixel accent everywhere
- ▪ fe2ff9f Settings: Make shortcut icon colors match settings accent
- ▪ ec49047 Settings: PreviewPagerAdapter: copy the full theme
- ▪ 3bbba44 Improve color selection preview
- ▪ 316b3bb ColorEngine settings: show accent color selection on first open
- ▪ 7c5a01e Settings: Support color engine
-
- ▪ project system/vold/
- ▪ d8d5e6e Fix bug in cryptfs_verify_passwd with hardware disk encryption
-
- ▪ project vendor/cm/
- ▪ 889b570 Merge remote-tracking branch 'rr/nougat' into HEAD
- ▪ 3b31d8f Final version for N -> 5.8.5 \m/
- ▪ 6d81c3d vendor: sepolicy: Add Color Engine policy
- ▪ 813d067 Revert "Revert "vendor: cm: sepolicy: Allow rw-access to system_app_data_file""
- ▪ c0a7af1 Remove all traces of CMTE policy
-
- ▼ 09/23/2017
-
-
- ▪ project packages/apps/ResurrectionStats/
- ▪ 53fe045 Const: 5.8.5
-
- ▪ project vendor/cm/
- ▪ ed3107d RR: v5.8.5
-
- ▼ 09/21/2017
-
-
- ▪ project frameworks/base/
-
- ▪ project packages/apps/FlipFlap/
- ▪ 484ba97 FlipFlap: Specify a qualified user for start/stop service
-
- ▪ project packages/apps/Settings/
-
- ▼ 09/20/2017
-
-
- ▪ project hardware/cyanogen/
- ▪ da0e259 livedisplay: Add msm8998 and sdm660 as SDM targets
-
- ▪ project packages/apps/FlipFlap/
- ▪ d27b7eb FlipFlap: Allow to set dot ratio
-
- ▪ project system/extras/su/
- ▪ 11730a5 correct delivering process return code to caller
-
- ▼ 09/19/2017
-
-
- ▪ project frameworks/av/
- ▪ 74ff75e Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into HEAD
-
- ▪ project frameworks/native/
- ▪ 47d7223 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into HEAD
-
- ▪ project hardware/qcom/fm/
-
- ▪ project packages/apps/AudioFX/
-
- ▪ project packages/apps/Bluetooth/
+ ▪ b1d2e3c Merge remote-tracking branch 'los/lineage-15.0' into cm-14.1
 
  ▪ project packages/apps/Calendar/
+ ▪ de97bce Calendar: Show year info for week view
 
- ▪ project packages/apps/Camera2/
-
- ▪ project packages/apps/CellBroadcastReceiver/
-
- ▪ project packages/apps/CertInstaller/
-
- ▪ project packages/apps/DeskClock/
-
- ▪ project packages/apps/Eleven/
-
- ▪ project packages/apps/Email/
-
- ▪ project packages/apps/EmergencyInfo/
-
- ▪ project packages/apps/Exchange/
-
- ▪ project packages/apps/FMRadio/
-
- ▪ project packages/apps/FlipFlap/
-
- ▪ project packages/apps/Gallery2/
-
- ▪ project packages/apps/Jelly/
-
- ▪ project packages/apps/ManagedProvisioning/
-
- ▪ project packages/apps/Nfc/
-
- ▪ project packages/apps/Recorder/
-
- ▪ project packages/apps/SetupWizard/
-
- ▪ project packages/apps/Snap/
-
- ▪ project packages/apps/Stk/
-
- ▪ project packages/apps/Tag/
-
- ▪ project packages/apps/Terminal/
-
- ▪ project packages/apps/Trebuchet/
-
- ▪ project packages/apps/TvSettings/
-
- ▪ project packages/apps/UnifiedEmail/
-
- ▪ project packages/inputmethods/LatinIME/
-
- ▪ project packages/providers/CalendarProvider/
-
- ▪ project packages/providers/ContactsProvider/
-
- ▪ project packages/providers/DataUsageProvider/
-
- ▪ project packages/providers/DownloadProvider/
-
- ▪ project packages/providers/MediaProvider/
-
- ▪ project packages/providers/TelephonyProvider/
-
- ▪ project packages/resources/devicesettings/
-
- ▪ project packages/screensavers/Basic/
-
- ▪ project packages/screensavers/PhotoTable/
-
- ▪ project packages/wallpapers/LivePicker/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
-
- ▪ project vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
-
- ▼ 09/18/2017
+ ▼ 10/19/2017
 
 
- ▪ project frameworks/av/
- ▪ f80e21a audioflinger: Use offloaded effects in case of PCM offload
+ ▪ project kernel/samsung/trlte/
+ ▪ 7dcdbfc mac80211: use constant time comparison with keys
+ ▪ 5c4ed7e mac80211: accept key reinstall without changing anything
+ ▪ 5da4cab ALSA: seq: Fix use-after-free at creating a port
 
- ▪ project packages/apps/Eleven/
- ▪ 49b8b9c Eleven: Create one cursor per background task
-
- ▼ 09/17/2017
+ ▼ 10/18/2017
 
 
- ▪ project android/
- ▪ f0c3b1f manifest: switch to our forks of several repos
-
- ▪ project build/
- ▪ f6958ef Updating Security String to 2017-09-05 Bug:63846344
-
- ▪ project external/skia/
- ▪ 878b9da Defend against ICOs with large BMPs embedded DO NOT MERGE
-
- ▪ project external/sonivox/
- ▪ 188ae17 Fix compiler warnings in sonivox and enable -Werror.
-
- ▪ project frameworks/av/
- ▪ eeff3f6 Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
-
- ▪ project frameworks/base/
- ▪ bb68d19 Back-port fixes for b/62196835
- ▪ cbce7ff Don't disable the GPS prematurely
- ▪ 8503dcf PrivateStorageInfo: Exclude primary physical volume total space
- ▪ fe5307e Keyguard: Change fingerprint listening behavior
-
- ▪ project hardware/samsung/
- ▪ 298215c audio: Fix WBS sample rate usage
-
- ▪ project packages/apps/DUI/
+ ▪ project kernel/samsung/trlte/
+ ▪ 25fa2ee nl80211: check for the required netlink attributes presence
 
  ▪ project packages/apps/Dialer/
 
- ▪ project packages/apps/Messaging/
- ▪ e0708ed Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+ ▪ project packages/apps/PackageInstaller/
 
- ▪ project packages/apps/OmniSwitch/
+ ▪ project packages/apps/ResurrectionOTA/
+
+ ▪ project packages/apps/ResurrectionStats/
 
  ▪ project packages/apps/Settings/
- ▪ efbb78f Add moderator tags to about settings
- ▪ 6d05ff9 Back-port ag/2491664
- ▪ 2214a57 AppOpsDetails: Generate correct summary when changing list prefs
- ▪ ac086f6 Settings: Allow devices to provide remote gesture preferences
- ▪ 1b1f6ea Settings: Fix internal storage summary for non-emulated storage devices
- ▪ 4776440 Settings: Always show Privacy Guard permissions
- ▪ 02a6349 AppOps: Switch to an HashMap
- ▪ a3bbfda Settings: Add a shortcut icon for carrier selection
- ▪ cb1ab8b AppOps: Redesign
- ▪ 3a0e238 Revert "Settings[Wifi]: fix the input invalid length for WEP encryption."
 
- ▼ 09/16/2017
+ ▼ 10/17/2017
 
 
- ▪ project external/libavc/
- ▪ 2170933 Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.
- ▪ 871e2ff Decoder: Fixed overflow in refernce list creation.
- ▪ 73ff61b Initialize DPB structures to valid values.
- ▪ 1a4a25a Added error check for output buffer size.
+ ▪ project external/wpa_supplicant_8/
+ ▪ ac78917 Clear PMK length and check for this when deriving PTK
+ ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
+ ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
+ ▪ 5c64f90 Remove all PeerKey functionality
+ ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
+ ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
+ ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
+ ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
+ ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
+ ▪ bab71fa Prevent installation of an all-zero TK
+ ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
+ ▪ 4326a42 Prevent reinstallation of an already in-use group key
+ ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
+ ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
 
- ▪ project external/libhevc/
- ▪ 2f28765 Limit boundary PU sizes in case of errors
- ▪ 3008a9a Fix array size for hrd parameters
- ▪ d2b7822 Check number of output buffers and sizes
- ▪ 8e3fe3b Return error for invalid crop parameters
+ ▪ project packages/apps/Calendar/
+ ▪ 56dc4a8 Calendar: Show week start and end in title for Week view
 
- ▪ project external/libvpx/
- ▪ 50bde27 DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream
+ ▼ 10/16/2017
 
- ▪ project external/sonivox/
- ▪ afc7e48 Fix interpolator
 
- ▪ project external/sqlite/
- ▪ f55bb7e DO NOT MERGE - fix FTS3 column pointer handling
+ ▪ project packages/apps/Eleven/
+ ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
+ ▪ 119d774 Eleven: Don't use a sticky service
 
- ▪ project external/tremolo/
- ▪ 0000b2b Use heap instead of alloca in res012.c
+ ▼ 10/14/2017
+
+
+ ▪ project device/samsung/trltexx/
+ ▪ 5222d77 trltexx: remove duplicated partitions sizes
 
  ▪ project frameworks/av/
- ▪ be42248 MPEG4Source: fix fragmented read.
- ▪ ac561ef stagefright: fix crash due to bad timestamp index
- ▪ 47f7228 stagefright: check aac_frame_length to prevent infinite loop
- ▪ 708ca76 MediaPlayerService: fix access of mPlayer in client
- ▪ 20a8bdc audio effects: filter reserved effect commands
- ▪ 1f8cd83 MPEG4Extractor: ensure returned status is checked.
- ▪ 09ebf66 DO NOT MERGE Check frame handle validity before freeing buffer.
- ▪ ae74db2 Change MPEG2 reinit Error Handling
- ▪ 6e05adf Track: Check buffer size of static tracks
- ▪ e0b8295 MPEG4Extractor: check size for yrrc box
- ▪ 7a84ae8 AudioFlinger: Fix memory allocation for client-less tracks
- ▪ b1c91bc Notify Errors Appropriately from SoftMPEG2
- ▪ 6dff427 EffectBundle: Check value size for get preset name
- ▪ 3fcd8ac Fix TOCTOU problem in libstagefright_soft_aacenc
+ ▪ 1581dc4 change cam params
 
- ▪ project frameworks/minikin/
- ▪ 440e10a Reject unsorted cmap entries. DO NOT MERGE
-
- ▪ project hardware/broadcom/wlan/
- ▪ 71b070f net: wireless: bcmdhd: update bcm4354/4356 FW (7.35.101.8)
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 7a797d4 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8952/
- ▪ 0bf8b30 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 01e8f3b Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ f5a8e83 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ 7da7e5e Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ 53c7f74 Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio-caf/msm8998/
- ▪ c736bfe Equalizer: Check value size for get preset name
-
- ▪ project hardware/qcom/audio/default/
- ▪ 3f7e702 Equalizer: Check value size for get preset name
-
- ▪ project packages/apps/Messaging/
- ▪ 87f81d9 37742976 - Catch bad gifs
-
- ▪ project packages/apps/Nfc/
- ▪ f20aedf Add READ_EXTERNAL_STORAGE for file based Uri while beaming.
-
- ▼ 09/15/2017
-
+ ▪ project hardware/ril-caf/
+ ▪ b719fc4 ril: set MAX_DIAL_ADDRESS as uint
+ ▪ b3f3039 Merge remote-tracking branch 'los/cm-14.1-caf' into cm-14.1-caf
+ ▪ 5bf5408 ril: fix a memory leak.
 
  ▪ project kernel/samsung/trlte/
- ▪ 65ef3e2 Bluetooth: Properly check L2CAP config option output buffer length
-
- ▪ project packages/apps/AudioFX/
- ▪ 3f7743b AudioFX: use vector drawables
- ▪ b94e30b AudioFX: set theme accent to white
- ▪ 00d3381 AudioFX: match control switches color with fragment background
- ▪ f5d78ad AudioFX: Add Reverb toggle
-
- ▪ project system/bt/
- ▪ 215d434 Add missing extension length check while parsing BNEP control packets
- ▪ a61aaf1 Free p_pending_data from tBNEP_CONN to avoid potential memory leaks
- ▪ 922d50b Add a missing check for PAN buffer size before copying data
- ▪ c6f7f86 Add missing packet length checks while parsing BNEP control packets
- ▪ 7e30b79 Add missing continuation offset check for SDP continuation requests
- ▪ 0700e5b Disable PAN Reverse Tethering when connection originated by the Remote
- ▪ 8825957 Allocate buffers of the right size when BT_HDR is included
-
- ▼ 09/14/2017
-
-
- ▪ project packages/apps/AudioFX/
- ▪ 9fe5a3a AudioFX: Use default material toggle
- ▪ 9662067 AudioFX: Apply effects independently of the output flags
-
- ▼ 09/12/2017
-
-
- ▪ project hardware/qcom/media-caf/msm8960/
- ▪ b28bc21 BACKPORT: mm-video: venc: Protect buffer from being freed while accessing
- ▪ f65fe19 BACKPORT: mm-video: vdec: Avoid processing ETBs/FTBs in invalid states
+ ▪ 6784ddf Merge remote-tracking branch 'los/lineage-15.0' into cm-14.1
 
  ▪ project packages/apps/Snap/
- ▪ 853e8ee WideAnglePanoramaUI: Show switcher on Stop Capture
+ ▪ 2be84d2 Merge remote-tracking branch 'github/cm-14.1' into nougat
 
- ▼ 09/11/2017
-
-
- ▪ project hardware/qcom/media-caf/msm8974/
- ▪ 209a13c mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
- ▪ project kernel/samsung/trlte/
- ▪ 1f78e9a apq8084: ipa: remove redundant NULL pointer check
-
- ▪ project packages/apps/TvSettings/
- ▪ acace0c Use new updater activity name for update button
-
- ▼ 09/10/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8916/
- ▪ 76a0188 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.24' into cm-14.1-caf-8916
-
- ▪ project hardware/qcom/audio-caf/msm8960/
- ▪ 9d1af8a aenc-aac: bounds checking
-
- ▪ project hardware/qcom/audio-caf/msm8996/
- ▪ aab6e9f msm8937: hal: Support custom mixer_paths file names
- ▪ ed2f918 policy_hal: Don't fill in offload information for unsupported streams
- ▪ c816745 msm8937: acdb: Make acdb reloading optional
- ▪ 49e5b92 ssr: Fix building with OSS materials
- ▪ 955bf9d msm8996: ultrasound: Initial open source hal for Elliptic Ultrasound
- ▪ 821cccf msm8996: audio: Add l/r mic swapping when using stereo mics
- ▪ ce1ee1d Add special case for stereo camcorder
- ▪ bd30b5b hal: Featureize APE/VORBIS/WMA offload support
- ▪ d991672 audio policy: fix capture indication to sound trigger service.
- ▪ 4944746 hal: Don't try to record using 3-mic unless we mean it
- ▪ 1a22ffe hal: Haxed header
- ▪ 62da52b audio: Fix flac offload not working
- ▪ a819e32 hal: Fix build with HDMI disabled
- ▪ 3c433f9 audio: Fix complilation warnings under Clang
- ▪ 0881ab0 msm8996: fix werror when AUDIO_FEATURE_ENABLED_DTS_EAGLE is enabled
- ▪ 3b00fbd audio: Extend platform parser to allow device name aliasing
- ▪ fa3ad7e hal: post_proc: enabled / disable volume listener based on prop
- ▪ 1eafbe7 hal: Support the audio amplifier hook
- ▪ 93c4733 audio: Use direct project pathmap
-
- ▪ project hardware/qcom/display-caf/msm8996/
- ▪ 0e4f36e display: Fix ColorMetaData
- ▪ 837bea4 display-caf: msm8996: Use ColorMetaData in SDM in hwc2
- ▪ b57e903 display-caf: 8996: Add color metadata to libgralloc1
- ▪ 149b738 hwc2: Only set display_width and display_height when equal to zero
- ▪ ad7a601 hwc2: Handle empty lists in AcceptDisplayChanges
- ▪ 8a47e28 msm8996: hwc2: check for null layers in layer map
- ▪ 934772f hwc2 : Fix layer updating flag
- ▪ 4d97c5e gralloc: Return an error if the buffer was not mapped
- ▪ 9f3b96b Revert "Revert "gralloc: Default to 601 color space""
- ▪ 0a5444d hwc2: Workaround use after free by surfaceflinger
- ▪ 5e1a288 hwc2: Update composition types on AcceptDisplayChanges
- ▪ 066fd9b Revert "gralloc: Default to 601 color space"
- ▪ 6d28c4b gralloc: Disable UBWC for writeback buffers
- ▪ 557c5ff hwc2: Initialize color mode to native
- ▪ 1c5f5a8 hwc2 : Allow only top most cursor layer
- ▪ fd935a0 Revert "gralloc: Return an error if the buffer was not mapped"
- ▪ bcd5a49 hwc2: Fix solid fill
- ▪ 52218dc sdm:hwc2: Store higher order mode id in case of clash
- ▪ 302a25c gralloc: Return an error if the buffer was not mapped
- ▪ d42e293 hwc2: Fix retire fences
- ▪ 0d41f5d hwc2: Always store a release fence if a layer is presented
- ▪ 2b1d161 hwc2: Use current frames retire fence only for the primary
- ▪ 2113967 8996/HWC2: Return this frame's retire fence
- ▪ 8fe4a3b hwc2: Remove default mode application at boot.
- ▪ 6257c08 hwc2: Support HWC2_CAPABILITY_SKIP_CLIENT_COLOR_TRANSFORM
- ▪ 36f1973 hwc: Set ioprio for vsync thread
- ▪ bb18e78 Fix duplicate copy file rules
- ▪ cc9a267 Don't build lights module if vendor supplies it
- ▪ 8c771e6 display: Use project pathmap
-
- ▪ project hardware/qcom/media-caf/msm8996/
- ▪ e84dcfe Fix duplicated OMX.qcom.audio.decoder.aac entry
- ▪ 1b85693 media: libOmxSw encoders require prop headers :(
- ▪ 8adf136 mm-video: Disable proprietary extension
- ▪ 166864f venc: Fix VQZip issue
- ▪ 914d3bc media: Avoid collision with FFMPEG plugin
- ▪ 71d6868 media: Use project pathmap
-
- ▪ project kernel/samsung/trlte/
- ▪ e248899 net: wireless: bcmdhd: adding boudary check in wl_escan_handler
- ▪ 46c4ee2 net: wireless: bcmdhd: adding boundary check for pfn events
- ▪ 4f33b40 net: wireless: bcmdhd: Remove "dhd_handle_swc_evt" from dhd.
- ▪ 09e201b net: wireless: bcmdhd: add boundary check in GSCAN full result handler
- ▪ b00eb74 net: wireless: bcmdhd: adding boundary check in wl_notify_rx_mgmt_frame
- ▪ 9e286dd net: wireless: bcmdhd: add boundary check in dhd_rtt_event_handler
-
- ▪ project packages/apps/Jelly/
- ▪ 5f25616 Jelly: Reuse DateFormat instance in HistoryAdapter.
-
- ▼ 09/09/2017
+ ▼ 10/13/2017
 
 
  ▪ project build/
- ▪ d945469 Merge remote-tracking branch 'rr/nougat' into nougat-dt
+ ▪ cb645b4 Merge commit 'd6b4f42a1457e87d41f0219b7b51bc7ac1a64dfc' into nougat-dt
+
+ ▪ project device/samsung/trlte-common/
+ ▪ 22651a3 trlte: add WBS to bluetooth (reverted from commit 6a86fd7c5e933f68615125b1ad58c3c9ffef5118) -> car devices not really work with it
+ ▪ ce6bb8d trlte-common: fix XTRA_SERVER config
+ ▪ 0a85700 apq8084-common: fix XTRA_SERVER config
+ ▪ ddb251d apq8084-common: fix XTRA_SERVER config
+ ▪ ce55fb6 trlte-common: enable burnin protection support
+ ▪ dfd56da trlte-common: Enable config_buttonLightOnKeypressOnly
+ ▪ 6c2931b trtrlte-common: set qseecomd to group root and core startup
 
  ▪ project frameworks/base/
- ▪ e1a287b Merge remote-tracking branch 'rr/nougat' into nougat-github
+ ▪ 8d01716 Merge remote-tracking branch 'rr/nougat' into nougat-github
 
- ▪ project packages/apps/DeskClock/
- ▪ 6c3941b DeskClock: Remove POWER_OFF_ALARM intent leftovers
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
 
- ▪ project packages/apps/Snap/
- ▪ ba7547f Merge remote-tracking branch 'github/cm-14.1' into nougat
+ ▪ project packages/apps/SetupWizard/
+ ▪ c3b2008 SetupWizard: Set min date to build date
 
- ▪ project vendor/cm/
- ▪ 2358ac4 update substratum V823
- ▪ 00bc98b Merge remote-tracking branch 'rr/nougat' into nougat-devtec
- ▪ 78774cb Update Magisk to 14.0 and MagiskMansager to 5.3.0 (#99)
+ ▼ 10/12/2017
 
- ▼ 09/08/2017
-
-
- ▪ project frameworks/base/
- ▪ fd3a9e3 Merge pull request #208 from BernardoBas/nougat
- ▪ cf0fd01 Fix not to disable the GPS prematurely
-
- ▪ project hardware/qcom/audio-caf/msm8994/
- ▪ cda376e Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/display-caf/msm8994/
- ▪ 39bc982 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
-
- ▪ project hardware/qcom/media-caf/msm8994/
- ▪ 5142d75 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.16' into cm-14.1-caf-8994
 
  ▪ project kernel/samsung/trlte/
- ▪ 32058e4 msm: camera: Allow driver file to be opend only once.
- ▪ 2f15710 msm: camera: fix off-by-one overflow in msm_isp_get_bufq
- ▪ 116d90c msm: camera: isp: fix for out of bound access array
- ▪ f1d146a wcnss: fix the potential memory leak and heap overflow
- ▪ 8710663 soc: qcom: msm_bus: add mutex lock for cllist data
- ▪ c97713d msm: msm_bus: Fix architecture dependant types
+ ▪ ca92c01 binder: use group leader instead of open thread
+ ▪ e39858d android: binder: Use wake up hint for synchronous transactions.
+ ▪ 822f85a7 ion: adjust system heap pool orders
+ ▪ 4f3d2f7 ion: Support an option to allocate buffers in 4KB chunks
+ ▪ 57b27eb staging: ion: fix corruption of ion_import_dma_buf
+ ▪ b9e9e64 ion: validate ion client in ion_debug_client_show() and extract data
+ ▪ 799006e ion: Use up_read where appropriate
+ ▪ 6d2794e ion: msm: fix cache maintenance on unmapped buffers
+ ▪ b4dc94b ion: always initialize the free list parameters
+ ▪ ce1f21a ion: Set the private page flag on secure chunks
+ ▪ 62f7b56 msm: ion: Allow non contiguous allocations in secure heap.
+ ▪ ff1de3a msm: ion: Do not check for overlapping ion heaps
+ ▪ d7e8417 ion: Register with show_mem notification framework
+ ▪ 8802855 mm: Add notifier framework for showing memory
+ ▪ 1103dc4 ion: Error out on memory secure failure
+ ▪ 275024f ion: Don't free memory if unsecure fails
+ ▪ df47ff8 ion: Remove reference counting from secure APIs
+ ▪ 7c602a0 ion: Remove usage hint from secure APIs
+ ▪ e6dc064 apq8084: remove unused ION_HEAP_TYPE_IOMMUCA
+ ▪ 2306f36 ion: Remove secure and unsecure buffer APIs
+ ▪ 96cbf45 arm64: use ioremap_cache() instead of ioremap_cached()
+ ▪ f066b86 ARM: 7933/1: rename ioremap_cached to ioremap_cache
+ ▪ 5a44fb6 staging: ion: shrink highmem pages on kswapd
+ ▪ d232bf4 ion: Cleanup stubs for secure buffers
+ ▪ f53e6c3 gpu: ion: add ftrace events for secure calls
+ ▪ 249746f ion: msm: plumb ION_HEAP_TYPE_DMA to core Ion
+ ▪ c78e1e2 ion: cma_secure_heap: validate buffer length
+ ▪ 2875ced ion: fix overflow and list bugs in system heap
+ ▪ 1ecf65c ion: move "freed from shrinker" flag to buffer private_flags
+ ▪ 22f9ea1 ion: move shrinker out of heaps
+ ▪ 2bc1a48 ion_test: Add compat_ioctl support (v2)
+ ▪ 2204df6 staging: ion: Avoid using rt_mutexes directly
+ ▪ a577070 staging: ion: Fix possible null pointer dereference
+ ▪ b5cdebc staging: ion: Add HAVE_MEMBLOCK config dependency
+ ▪ 1fd3cf1 gpu: ion: fix sparse non static symbol warnings
+ ▪ 0137cbe gpu: ion: use module_platform_driver to simplify the code
+ ▪ 3710710 ion: optimize ion_heap_buffer_zero
+ ▪ 7a3d38de ion: add `0x' prefix to hex numbers in debugfs output
+ ▪ 34ce45f ion: msm: move custom zero'ing functions out of core Ion
+ ▪ d2cf744 ion: Make secure table APIs public
+ ▪ 7afaa09 ion: shrinker free pages even for unmovable page requests
+ ▪ 846f1ab iommu: Move IOMMU mapping out of Ion directory
+ ▪ ab595a6 ion: Use dma_free_attrs for freeing secure memory
+ ▪ 88b00b4 input: synaptics: put offset checks under mutex.
+ ▪ a0ad8f7 input: synaptics: prevent sysfs races
+ ▪ a0f6433 input: synaptics: defer sysfs creation during init
+ ▪ 7803363 input: synaptics: Add checks of user input data
+ ▪ f2ae535 input: synaptics: Do not allow sysfs to run in suspend
+ ▪ 780b8b0 input: synaptics: allocate heap memory for buffer
+ ▪ c8e7ce6 input: synaptics_dsx: allocate heap memory for temp buf
+ ▪ ed56863 input: synaptics: allocate heap memory for temp buf
+ ▪ c56c1ce apq8084: Reduce size of bus vote data allocation
+ ▪ 4b6c03b apq8084: fix missing change in debug output
+
+ ▼ 10/11/2017
+
+
+ ▪ project packages/apps/Recorder/
+ ▪ 084c5a0 Recorder: Advertise that we can record voice
+
+ ▼ 10/09/2017
+
+
+ ▪ project kernel/samsung/trlte/
+ ▪ cdf01f1 Adapted in their entirety from apq_sec_trlte_tmo_defconfig, with the 2nd line changed appropriately for each respective variant.
 
  ▪ project packages/apps/Settings/
- ▪ 924a9c6 Add J5H to the list (#864)
-
- ▼ 09/07/2017
-
-
- ▪ project hardware/qcom/audio-caf/msm8974/
- ▪ 00b7019 aenc-aac: bounds checking
-
- ▪ project kernel/samsung/trlte/
- ▪ f946720 ASoC: msm: qdsp6v2: extend validation of virtual address
- ▪ 7c89901 ASoC: msm: remove unused msm-compr-q6-v2
- ▪ 1f754ed qcacld-2.0: Avoid concurrent matrix max param overread
- ▪ 53e95df msm: ipa: fix security issues in ipa wan driver
- ▪ ece9675 ion: Fix unprotected userspace access
- ▪ eb16fd1 mm: Fix incorrect type conversion for size during dma allocation
-
- ▪ project packages/apps/Settings/
- ▪ 2683f89 I've changed my name (#862)
-
- ▼ 09/06/2017
-
-
- ▪ project hardware/qcom/media-caf/apq8084/
- ▪ 477e1d7 mm-video-v4l2: venc: Protect buffer from being freed while accessing
-
- ▪ project kernel/samsung/trlte/
- ▪ 9339276 arm64: Fix out of bound access to compat_hwcap_str
- ▪ 30be0f6 ipx: call ipxitf_put() in ioctl error path
- ▪ 79f1483 apq8084: inet_csk_clone_lock: reorder statements to align to upstream
- ▪ bcf6d32 qcacld: Increase SSR timeout to 30 seconds
- ▪ 19b5670 qcacld-2.0: Do not allow NoA setting in non P2P GO mode
- ▪ 8f6797d qcacld-2.0: Fix agc registers dump logic to avoid fw assert
- ▪ 07a21d5 apq8084: fix file permissions
-
- ▼ 09/05/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ 09c46d1 apq8084: defconfig: fix earjack settings
- ▪ 9a5a725 apq8084: w1: Fix call order when adding slave device
- ▪ 439c58a Revert "apq8084: ehci: hsic: try harder to get rid of wakelock"
 
