@@ -2,6 +2,20 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
+ ▼ 10/25/2017
+
+
+ ▪ project device/samsung/trlte-common/
+ ▪ 530c9e7 trlte-common: add fingerprint client notification of successful cancelled auth
+ ▪ 277ab98 trlte-common: add PowerManagment config and uiBlur config
+ ▪ a705fd9 trlte-common: add sepolicy entry for macloader
+ ▪ 06da0dd5 trlte-common: update dot dimension for fingerprint info
+ ▪ 35ac922 trlte-common: snap: only update copyright date
+
+ ▪ project kernel/samsung/trlte/
+ ▪ 55cfc9f Revert "usb: xhci: Add support for URB_ZERO_PACKET to bulk/sg transfers"
+ ▪ 7031d81 RE-APPLY: xhci: fix reporting of 0-sized URBs in control endpoint
+
  ▼ 10/23/2017
 
 
@@ -13,6 +27,9 @@
 
  ▪ project packages/apps/Dialer/
  ▪ 692c0ef Merge pull request #3 from CyberWalkMaN/nougat
+
+ ▪ project packages/apps/PhoneCommon/
+ ▪ 4e1e07c Squashed support for multilanguage T9 dialer (2/2)
 
  ▼ 10/22/2017
 
@@ -39,6 +56,9 @@
  ▪ 4044ee5 Dialer: Move padding from layout to spinner
  ▪ 69cc1dc BUGBASH-612: do not send phone numbers to non-ssl sites for reverse/forward/people lookups
 
+ ▪ project packages/apps/PhoneCommon/
+ ▪ 6444eec Squashed support for multilanguage T9 dialer (2/2)
+
  ▼ 10/20/2017
 
 
@@ -48,176 +68,4 @@
 
  ▪ project kernel/samsung/trlte/
  ▪ b1d2e3c Merge remote-tracking branch 'los/lineage-15.0' into cm-14.1
-
- ▪ project packages/apps/Calendar/
- ▪ de97bce Calendar: Show year info for week view
-
- ▼ 10/19/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ 7dcdbfc mac80211: use constant time comparison with keys
- ▪ 5c4ed7e mac80211: accept key reinstall without changing anything
- ▪ 5da4cab ALSA: seq: Fix use-after-free at creating a port
-
- ▼ 10/18/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ 25fa2ee nl80211: check for the required netlink attributes presence
-
- ▪ project packages/apps/Dialer/
-
- ▪ project packages/apps/PackageInstaller/
-
- ▪ project packages/apps/ResurrectionOTA/
-
- ▪ project packages/apps/ResurrectionStats/
-
- ▪ project packages/apps/Settings/
-
- ▼ 10/17/2017
-
-
- ▪ project external/wpa_supplicant_8/
- ▪ ac78917 Clear PMK length and check for this when deriving PTK
- ▪ a630551 Add debug prints on PMK configuration in WPA supplicant
- ▪ fbf7ecc WPA: Extra defense against PTK reinstalls in 4-way handshake
- ▪ 5c64f90 Remove all PeerKey functionality
- ▪ 726e02c Add MGMT_TX_STATUS_PROCESS command for testing purposes
- ▪ cda7ff1 FT: Do not allow multiple Reassociation Response frames
- ▪ 8fb5fe9 WNM: Ignore WNM-Sleep Mode Response without pending request
- ▪ b6fccd0 TDLS: Reject TPK-TK reconfiguration
- ▪ 04d9c3d Fix PTK rekeying to generate a new ANonce
- ▪ bab71fa Prevent installation of an all-zero TK
- ▪ 812c80a Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases
- ▪ 4326a42 Prevent reinstallation of an already in-use group key
- ▪ 3edbf11 hostapd: Avoid key reinstallation in FT handshake
- ▪ b075172 Set EAPOL-Key Key Length field to 0 for group message 1/2 in RSN
-
- ▪ project packages/apps/Calendar/
- ▪ 56dc4a8 Calendar: Show week start and end in title for Week view
-
- ▼ 10/16/2017
-
-
- ▪ project packages/apps/Eleven/
- ▪ 91a8a10 Eleven: Fix potential NPE when media server crashes
- ▪ 119d774 Eleven: Don't use a sticky service
-
- ▼ 10/14/2017
-
-
- ▪ project device/samsung/trltexx/
- ▪ 5222d77 trltexx: remove duplicated partitions sizes
-
- ▪ project frameworks/av/
- ▪ 1581dc4 change cam params
-
- ▪ project hardware/ril-caf/
- ▪ b719fc4 ril: set MAX_DIAL_ADDRESS as uint
- ▪ b3f3039 Merge remote-tracking branch 'los/cm-14.1-caf' into cm-14.1-caf
- ▪ 5bf5408 ril: fix a memory leak.
-
- ▪ project kernel/samsung/trlte/
- ▪ 6784ddf Merge remote-tracking branch 'los/lineage-15.0' into cm-14.1
-
- ▪ project packages/apps/Snap/
- ▪ 2be84d2 Merge remote-tracking branch 'github/cm-14.1' into nougat
-
- ▼ 10/13/2017
-
-
- ▪ project build/
- ▪ cb645b4 Merge commit 'd6b4f42a1457e87d41f0219b7b51bc7ac1a64dfc' into nougat-dt
-
- ▪ project device/samsung/trlte-common/
- ▪ 22651a3 trlte: add WBS to bluetooth (reverted from commit 6a86fd7c5e933f68615125b1ad58c3c9ffef5118) -> car devices not really work with it
- ▪ ce6bb8d trlte-common: fix XTRA_SERVER config
- ▪ 0a85700 apq8084-common: fix XTRA_SERVER config
- ▪ ddb251d apq8084-common: fix XTRA_SERVER config
- ▪ ce55fb6 trlte-common: enable burnin protection support
- ▪ dfd56da trlte-common: Enable config_buttonLightOnKeypressOnly
- ▪ 6c2931b trtrlte-common: set qseecomd to group root and core startup
-
- ▪ project frameworks/base/
- ▪ 8d01716 Merge remote-tracking branch 'rr/nougat' into nougat-github
-
- ▪ project packages/apps/PackageInstaller/
- ▪ 1593371 PackageInstaller: fix install button after merge of October ASB
-
- ▪ project packages/apps/SetupWizard/
- ▪ c3b2008 SetupWizard: Set min date to build date
-
- ▼ 10/12/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ ca92c01 binder: use group leader instead of open thread
- ▪ e39858d android: binder: Use wake up hint for synchronous transactions.
- ▪ 822f85a7 ion: adjust system heap pool orders
- ▪ 4f3d2f7 ion: Support an option to allocate buffers in 4KB chunks
- ▪ 57b27eb staging: ion: fix corruption of ion_import_dma_buf
- ▪ b9e9e64 ion: validate ion client in ion_debug_client_show() and extract data
- ▪ 799006e ion: Use up_read where appropriate
- ▪ 6d2794e ion: msm: fix cache maintenance on unmapped buffers
- ▪ b4dc94b ion: always initialize the free list parameters
- ▪ ce1f21a ion: Set the private page flag on secure chunks
- ▪ 62f7b56 msm: ion: Allow non contiguous allocations in secure heap.
- ▪ ff1de3a msm: ion: Do not check for overlapping ion heaps
- ▪ d7e8417 ion: Register with show_mem notification framework
- ▪ 8802855 mm: Add notifier framework for showing memory
- ▪ 1103dc4 ion: Error out on memory secure failure
- ▪ 275024f ion: Don't free memory if unsecure fails
- ▪ df47ff8 ion: Remove reference counting from secure APIs
- ▪ 7c602a0 ion: Remove usage hint from secure APIs
- ▪ e6dc064 apq8084: remove unused ION_HEAP_TYPE_IOMMUCA
- ▪ 2306f36 ion: Remove secure and unsecure buffer APIs
- ▪ 96cbf45 arm64: use ioremap_cache() instead of ioremap_cached()
- ▪ f066b86 ARM: 7933/1: rename ioremap_cached to ioremap_cache
- ▪ 5a44fb6 staging: ion: shrink highmem pages on kswapd
- ▪ d232bf4 ion: Cleanup stubs for secure buffers
- ▪ f53e6c3 gpu: ion: add ftrace events for secure calls
- ▪ 249746f ion: msm: plumb ION_HEAP_TYPE_DMA to core Ion
- ▪ c78e1e2 ion: cma_secure_heap: validate buffer length
- ▪ 2875ced ion: fix overflow and list bugs in system heap
- ▪ 1ecf65c ion: move "freed from shrinker" flag to buffer private_flags
- ▪ 22f9ea1 ion: move shrinker out of heaps
- ▪ 2bc1a48 ion_test: Add compat_ioctl support (v2)
- ▪ 2204df6 staging: ion: Avoid using rt_mutexes directly
- ▪ a577070 staging: ion: Fix possible null pointer dereference
- ▪ b5cdebc staging: ion: Add HAVE_MEMBLOCK config dependency
- ▪ 1fd3cf1 gpu: ion: fix sparse non static symbol warnings
- ▪ 0137cbe gpu: ion: use module_platform_driver to simplify the code
- ▪ 3710710 ion: optimize ion_heap_buffer_zero
- ▪ 7a3d38de ion: add `0x' prefix to hex numbers in debugfs output
- ▪ 34ce45f ion: msm: move custom zero'ing functions out of core Ion
- ▪ d2cf744 ion: Make secure table APIs public
- ▪ 7afaa09 ion: shrinker free pages even for unmovable page requests
- ▪ 846f1ab iommu: Move IOMMU mapping out of Ion directory
- ▪ ab595a6 ion: Use dma_free_attrs for freeing secure memory
- ▪ 88b00b4 input: synaptics: put offset checks under mutex.
- ▪ a0ad8f7 input: synaptics: prevent sysfs races
- ▪ a0f6433 input: synaptics: defer sysfs creation during init
- ▪ 7803363 input: synaptics: Add checks of user input data
- ▪ f2ae535 input: synaptics: Do not allow sysfs to run in suspend
- ▪ 780b8b0 input: synaptics: allocate heap memory for buffer
- ▪ c8e7ce6 input: synaptics_dsx: allocate heap memory for temp buf
- ▪ ed56863 input: synaptics: allocate heap memory for temp buf
- ▪ c56c1ce apq8084: Reduce size of bus vote data allocation
- ▪ 4b6c03b apq8084: fix missing change in debug output
-
- ▼ 10/11/2017
-
-
- ▪ project packages/apps/Recorder/
- ▪ 084c5a0 Recorder: Advertise that we can record voice
-
- ▼ 10/09/2017
-
-
- ▪ project kernel/samsung/trlte/
- ▪ cdf01f1 Adapted in their entirety from apq_sec_trlte_tmo_defconfig, with the 2nd line changed appropriately for each respective variant.
-
- ▪ project packages/apps/Settings/
 
