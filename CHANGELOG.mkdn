@@ -2,70 +2,396 @@
  ▼ Resurrection Remix Nougat Ver 5.8.3 Changelog
 
 
- ▼ 10/25/2017
+ ▼ 12/21/2017
 
 
- ▪ project device/samsung/trlte-common/
- ▪ 530c9e7 trlte-common: add fingerprint client notification of successful cancelled auth
- ▪ 277ab98 trlte-common: add PowerManagment config and uiBlur config
- ▪ a705fd9 trlte-common: add sepolicy entry for macloader
- ▪ 06da0dd5 trlte-common: update dot dimension for fingerprint info
- ▪ 35ac922 trlte-common: snap: only update copyright date
-
- ▪ project kernel/samsung/trlte/
- ▪ 55cfc9f Revert "usb: xhci: Add support for URB_ZERO_PACKET to bulk/sg transfers"
- ▪ 7031d81 RE-APPLY: xhci: fix reporting of 0-sized URBs in control endpoint
-
- ▼ 10/23/2017
-
+ ▪ project build/
+ ▪ 0c928b4bc Merge remote-tracking branch 'rr/nougat' into nougat-dt
 
  ▪ project device/samsung/trlte-common/
- ▪ 66108b4 trlte-common: clean up
- ▪ 4819785 trlte-common: remove unused media codec
- ▪ 1fddc7a trlte-common: wpa_supplicant_overlay.conf: remove unused p2p_disabled=1 p2p_supplicant_overlay.conf: set p2p_disabled=0 to enable Wifi Direct
- ▪ 80256da trlte-common: remove device wpa_supplicant.conf change macloader service start
+ ▪ a1bbede Merge branch 'los-14.1' into los-14.1-devtec
+ ▪ 58667cc trlte-common: change sort of some vars
+ ▪ f494cb6 trlte-common: remove duplicated rmnetctl and use original qcom (vendor/qcom/opensource/dataservice/rmnetctl)
+ ▪ dba7124 trlte-common: set properties behind inherit
+ ▪ a2de826 remove duplicate entry
+ ▪ f044384 sepolicy: add some qmuxd policies
+ ▪ 14acaae sepolicy: remove ims entries
+ ▪ 39167f4 selpolicy: add netmgr
+ ▪ a38293f Enable Qcom WBS
+ ▪ 0434b6e fingerprintd: add aditional sepolicy
+ ▪ 81a7268 wifi: enable WiFi-Direct
+ ▪ 8825f52 trlte-common: [2/3] switch from samsung ril to aosp/codeaurora ril-caf
 
- ▪ project packages/apps/Dialer/
- ▪ 692c0ef Merge pull request #3 from CyberWalkMaN/nougat
+ ▪ project frameworks/av/
+ ▪ 47507a26b change cam params
 
- ▪ project packages/apps/PhoneCommon/
- ▪ 4e1e07c Squashed support for multilanguage T9 dialer (2/2)
+ ▪ project frameworks/base/
+ ▪ b9f68be4167 Merge commit 'e5c75f2bc4839c3d750dcc6f87c3dc27a4011aa0' into nougat-github
 
- ▼ 10/22/2017
+ ▪ project kernel/samsung/apq8084/
+ ▪ 713650eadd9a disable zcache which not stable works and cleanup for next RC of RROS
+ ▪ 25c90b79cc9b zcache: add missing tmem.c/tmem.h files from linux kernel V3.10.108
+ ▪ 4024b870d528 encryptfs: add #ifdef CONFIG_SDP to prevent compile error if CONFIG_SDP not set
+ ▪ 2bc1055c0202 uapi: clean up some structs
+ ▪ 30ec9880672d battery: add CONFIF_FORCE_FAST_CHARGE defines
+ ▪ 33f70eee8265 config: - set CONFIG_ARCH_MMAP_RND_BITS=8 to prevent ART crash [signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x9c] - refresh config to kernel version 3.10.108
 
+ ▪ project packages/apps/Snap/
+ ▪ 8c5621806 Merge remote-tracking branch 'github/cm-14.1' into nougat
 
- ▪ project device/samsung/trlte-common/
- ▪ 3c46af0 trlte-common: disable preopt
-
- ▪ project hardware/qcom/bootctrl/
- ▪ 462212d Add msm8953 to the filter
-
- ▪ project hardware/ril-caf/
- ▪ 8cca2b8 DO NOT MERGE Fix security vulnerability in pre-O rild code.
-
- ▪ project kernel/samsung/trlte/
- ▪ c07538d sdcardfs: fix space leak
- ▪ 2641b7b ANDROID: sdcardfs: Add missing break
- ▪ 04d74c1 ANDROID: Sdcardfs: Move gid derivation under flag
- ▪ a182909 ANDROID: sdcardfs: override credential for ioctl to lower fs
-
- ▪ project packages/apps/Dialer/
- ▪ 2514f37 Squashed support for multilanguage T9 dialer (1/2)
- ▪ 04a303b Dialer: Provide upgrade path for removed lookup providers
- ▪ d133d0b Dialer: Fix compilation warnings
- ▪ 4044ee5 Dialer: Move padding from layout to spinner
- ▪ 69cc1dc BUGBASH-612: do not send phone numbers to non-ssl sites for reverse/forward/people lookups
-
- ▪ project packages/apps/PhoneCommon/
- ▪ 6444eec Squashed support for multilanguage T9 dialer (2/2)
-
- ▼ 10/20/2017
+ ▼ 12/20/2017
 
 
- ▪ project hardware/ril-caf/
- ▪ 3819865 Merge "Fix VTS HAL Radio tests" (reverted from commit 2c215429a4512707c6d9de6d09eb415bad581b70)
- ▪ 2c21542 Merge "Fix VTS HAL Radio tests"
+ ▪ project kernel/samsung/apq8084/
+ ▪ a520677b0f33 Merge remote-tracking branch 'github/cm-14.1' into cm-14.1
 
- ▪ project kernel/samsung/trlte/
- ▪ b1d2e3c Merge remote-tracking branch 'los/lineage-15.0' into cm-14.1
+ ▼ 12/19/2017
+
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 8a61c77 AudioFX: fix NPE at onPrepareOptionsMenu
+
+ ▼ 12/18/2017
+
+
+ ▪ project packages/apps/SetupWizard/
+ ▪ e0605c0 Disable SetupWraith, if GMS not present
+
+ ▼ 12/15/2017
+
+
+ ▪ project hardware/samsung/
+ ▪ 1824648 audio: Always use 16kHz sampling for SCO
+
+ ▼ 12/13/2017
+
+
+ ▪ project hardware/samsung/
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ 87048cc780bd apq8084: take_dentry_name_snapshot: avoid kfree under spinlock
+ ▪ 301f0245f478 UPSTREAM: net: xfrm: allow clearing socket xfrm policies.
+ ▪ cdcc53852f22 BACKPORT: xfrm: Don't use sk_family for socket policy lookups
+ ▪ a7d5cccf3426 UPSTREAM: ALSA: usb-audio: Kill stray URB at exiting
+ ▪ 2c28a8e498d0 BACKPORT: packet: in packet_do_bind, test fanout with bind_lock held
+ ▪ e0320987b314 UPSTREAM: packet: hold bind lock when rebinding to fanout hook
+ ▪ a4dd91d617bb UPSTREAM: ALSA: usb-audio: Check out-of-bounds access by corrupted buffer descriptor
+ ▪ eb338ad9fd3e UPSTREAM: USB: core: fix out-of-bounds access bug in usb_get_bos_descriptor()
+ ▪ 50524e0eed0f UPSTREAM: HID: usbhid: fix out-of-bounds bug
+ ▪ e79ea158c324 UPSTREAM: USB: fix out-of-bounds in usb_set_configuration
+ ▪ c61a8198b0c5 BACKPORT: xfrm: Clear sk_dst_cache when applying per-socket policy.
+ ▪ a93f7ef31431 BACKPORT: net: xfrm: support setting an output mark.
+ ▪ 68e046fc197b BACKPORT: Sanitize 'move_pages()' permission checks
+ ▪ 92196af70edb ANDROID: mnt: Fix freeing of mount data
+ ▪ 6dfb1ecc847f ANDROID: keychord: Fix races in keychord_write.
+ ▪ 0bd9f5dd8902 Revert "ANDROID: input: keychord: fix race condition bug"
+ ▪ ed7330be49ba ANDROID: keychord: Fix for a memory leak in keychord.
+ ▪ 63abba323351 ANDROID: keychord: Fix a slab out-of-bounds read.
+ ▪ 74156800b20d crypto: ablk_helper - Fix cryptd reordering
+ ▪ 53404e7c77bb crypto: cryptd - Add helpers to check whether a tfm is queued
+ ▪ 81fd6e6855d7 crypto: af_alg - Forbid the use internal algorithms
+ ▪ fd5bd828789b crypto: cryptd - process CRYPTO_ALG_INTERNAL
+ ▪ 63c75273a1ff crypto: testmgr - use CRYPTO_ALG_INTERNAL
+ ▪ d9c74fdb364d crypto: api - prevent helper ciphers from being used
+ ▪ eb84761642c5 crypto: ablk_helper - Replace memcpy with struct assignment
+ ▪ 307dd31c46f0 crypto: arm - ignore generated SHA2 assembly files
+ ▪ dcc37c29df6a Fix arch/arm/crypto/sha256_glue.c
+ ▪ 1abd423ce87c arm: crypto: Add optimized SHA-256/224
+ ▪ 78886f041c02 ARM: 8120/1: crypto: sha512: add ARM NEON implementation
+ ▪ 2fd65f5c242c ARM: 8119/1: crypto: sha1: add ARM NEON implementation
+ ▪ 08672944d4b4 ARM: 8118/1: crypto: sha1/make use of common SHA-1 structures
+ ▪ 7ca50aec41eb crypto: arm-aes - fix encryption of unaligned data
+ ▪ d6d21c59c9a0 CRYPTO: Fix more AES build errors
+ ▪ 687cec1540c3 ARM: add .gitignore entry for aesbs-core.S
+ ▪ 79bb0d4e0afb ARM: add support for bit sliced AES using NEON instructions
+ ▪ 06912334992d ARM: move AES typedefs and function prototypes to separate header
+ ▪ 11801cb92cd7 ARM: vfpmodule: move init call earlier
+ ▪ 1f6d7b6efa22 ARM: add support for kernel mode NEON
+ ▪ ba08d599636d msm: vidc: Squash the below changes
+ ▪ 322f4b52b196 qcacld-2.0: Fix incorrect frame length of encrypted auth frame
+ ▪ 067e5ee0e3e7 qcacld-2.0: Fix incorrect length of encrypted auth frame
+ ▪ 162dcaeb7642 ANDROID: binder: fix OOB write in __binder_update_page_range
+
+ ▪ project packages/apps/AudioFX/
+
+ ▪ project packages/apps/Bluetooth/
+
+ ▪ project packages/apps/CMParts/
+ ▪ 3cb1e0b Merge pull request #3 from Davehimself7586/patch-1
+
+ ▼ 12/12/2017
+
+
+ ▪ project android/
+ ▪ 2c020ba android-7.1.2_r29 -> android-7.1.2_r36
+
+ ▪ project build/
+ ▪ c2b760425 Bump security string to 2017-12-05
+
+ ▪ project external/skia/
+ ▪ cc36cbe26 Merge branch 'cm-14.1' of git://github.com/LineageOS/android_external_skia into nougat
+ ▪ bf8a04d00 Merge tag 'android-7.1.2_r36' into nougat
+
+ ▪ project frameworks/av/
+ ▪ b917d0b7e Merge remote-tracking branch 'lineage/cm-14.1' into HEAD
+
+ ▪ project frameworks/base/
+ ▪ e5c75f2bc48 Stop explicitly using kCallerPasses_Ownership
+ ▪ a146c62c483 Fix ClipboardService device lock check for cross profile
+ ▪ 233958f8ccd Prevent getting data from Clipboard if device is locked
+ ▪ 1a9fac1bf4c Clearing up invalid entries when SyncStorageEngine starts
+ ▪ a86c005c652 SystemUI: Fix title text clipping when task lock button is visible
+ ▪ 355e6694104 ZenModeHelper: Allow lights by default
+ ▪ 35faa934598 fw/b: Return a KeyEvent instead of a boolean in KeyHandler
+
+ ▪ project hardware/ti/omap4/
+ ▪ f5a98d3 Revert "omap4: add local libjhead"
+ ▪ 0f456ee omap4: add local libjhead
+
+ ▪ project packages/apps/CMParts/
+ ▪ 4218041 CMParts: gestures: Update KeyHandler for API change
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ c4735a26 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_PackageInstaller into HEAD
+
+ ▪ project packages/apps/Settings/
+ ▪ 16519cc213 DO NOT MERGE. ActivityPicker shouldn't grant permissions.
+ ▪ 13e6a2eb8d BugFix:Correct fullBearer in APNSettings
+ ▪ 2f5b6c9af9 Telephony: Fix Crash in SimStatus Fragment
+ ▪ 73ee6a27c9 Settings: fix vibrate for calls in Setting app displayed incorrect issue
+ ▪ c2ccc72d68 Settings: back icon doesn't work in format SD as portable page.
+ ▪ 8bea2b71c6 Settings: Fix settings force close
+ ▪ 184c68f844 Settings: Fix crash when disconnect wifi
+ ▪ 67dd9f7c42 Settings: Strings: Modify a few german summaries
+
+ ▪ project system/core/
+ ▪ 9ed022649 Merge remote-tracking branch 'LineageOS/cm-14.1' into HEAD
+
+ ▼ 12/11/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ 3f8eac284c20 android: binder: Move buffer out of area shared with user space
+ ▪ 5c547cdfa41c android: binder: Refactor prev and next buffer into a helper function
+ ▪ 4f284fa98103 BACKPORT: staging: android: fix missing a blank line after declarations
+ ▪ c1eea7a0ba44 UPSTREAM: Staging: Android: removed an unnecessary else statement
+ ▪ ce9d5e5e0667 UPSTREAM: include/linux/mm.h: add PAGE_ALIGNED() helper
+ ▪ 1b6c3bc950de binder: always allocate/map first BINDER_MIN_ALLOC pages
+ ▪ 65d3bfc808e7 ANDROID: scsi: Add segment checking in sg_read
+ ▪ 6e15762036b6 coresight: tmc: Fix the unbalanced lock in tmc_read()
+ ▪ 5dd6cf5be4bc coresight: tmc: Fix use after free issue with tmc read
+ ▪ 4de1709b708a qcacld-2.0: Check on IE length to avoid buffer over-read
+ ▪ 8ad3ac103cd7 qcacld-2.0: Fix invalid buffer access in send mgmt tx
+ ▪ 51d01ca5a749 apq8084: remove 'reboot edl' interface for security.
+ ▪ ace897510555 diag: Fix for possible dci stale entries
+ ▪ c8bdb01ebeb4 diag: dci: Add mutex protection while accessing client details
+ ▪ 3e81bd7b79d9 diag: dci: Add protection while de-initializing clients
+ ▪ 63852c5dfe1d apq8084: diag: revert Samsung-specific logging
+ ▪ 37acccd815f6 ANDROID: usb: gadget: f_mtp: Return error if count is negative
+ ▪ 56968a6e46d4 UPSTREAM: ALSA: timer: Call notifier in the same spinlock
+ ▪ b1b1b0fd28ea BACKPORT: ALSA: timer: Handle disconnection more safely
+ ▪ 97b733953c06 v4l2: Refactor, fix security bug in compat ioctl32
+ ▪ 354a16e101d7 ANDROID: ion: Fix uninitialized variable
+ ▪ 702cd37cbe2a qcacld-2.0: Add bound check for numap to avoid integer overflow
+ ▪ 212c75626f08 BACKPORT: dentry name snapshots
+ ▪ 45d638d6d45f Revert "apq8084: enable CONFIG_CPUSETS"
+ ▪ ed1e2da106b8 Revert "mm: Backport ZCache from QC kernel 3.18"
+ ▪ 44cbeef51cf6 Revert "apq8084: Enable Zcache and remove CONFIG_DIRECT_RECLAIM_FILE_PAGES_ONLY"
+
+ ▪ project packages/apps/Jelly/
+ ▪ c4a6bf8 Jelly: Use try-with-resources in downloadSuggestionsForQuery
+
+ ▪ project packages/apps/PackageInstaller/
+ ▪ 81ba4151 DO NOT MERGE Fixing Install button not enabled on resume
+ ▪ d65c53a6 Revert "Revert "DO NOT MERGE Disable overlays while installer is resumed""
+
+ ▼ 12/10/2017
+
+
+ ▪ project external/chromium-webview/
+ ▪ 4aff972 Update webviews to Chromium 63.0.3239.83
+
+ ▪ project external/skia/
+ ▪ e0a4c4794 Fix SkFILEStream.
+ ▪ 680eaf05e Fix truncated webp images DO NOT MERGE
+
+ ▪ project frameworks/av/
+ ▪ 3e16c556f Block allocateBufferWithBackup in secure native handle mode
+ ▪ 66c9362f1 Fix memory leaks
+ ▪ 2102b4d2b media: Fix a typo in parsing nclc atom.
+ ▪ acbbfff8d Soundtrigger service: fix cross deadlock with audio policy service
+ ▪ 787001779 IMediaExtractor: ensure users to check returned value by getTrack.
+ ▪ cb0c13867 Fix issues with extractor dumpsys
+
+ ▪ project frameworks/minikin/
+ ▪ 369826a Drop codepoints that are outside the Unicode range - DO NOT MERGE
+
+ ▪ project hardware/broadcom/wlan/
+ ▪ 7d31a89 net: wireless: bcmdhd: update bcm4358 FW (7.112.201.6) [DO NOT MERGE]
+
+ ▪ project hardware/intel/common/omx-components/
+ ▪ e9ffbbc Rejected the invalid size of input video buffer.
+
+ ▪ project hardware/qcom/media/
+ ▪ 92e736a0 mm-video-v4l2: venc: Protect buffer from being freed while accessing
+
+ ▪ project packages/apps/Jelly/
+ ▪ 6904728 Jelly: Allow to dismiss HTTP auth dialog
+ ▪ c42034e Jelly: Implementing favorite management through a ContentProvider.
+
+ ▪ project system/core/
+ ▪ 0d3d72fb7 zip_archive: reject files that don't start with an LFH signature.
+
+ ▼ 12/09/2017
+
+
+ ▪ project frameworks/base/
+ ▪ e25dc75606b Merge remote-tracking branch 'rr/nougat' into nougat-github
+
+ ▪ project vendor/samsung/
+ ▪ 3a90f49 add missed jar for radio/aosp ril
+
+ ▼ 12/08/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ aa02eb3f07e5 ARM: pull in <asm/simd.h> from asm-generic
+ ▪ 90e0ff9d65ff crypto: create generic version of ablk_helper
+ ▪ 18964d415922 msm8x84: update kernel header for msm video
+ ▪ 77b17e9dba0e apq8084: Enable Zcache and remove CONFIG_DIRECT_RECLAIM_FILE_PAGES_ONLY
+ ▪ 5ed12db21c07 mm: Backport ZCache from QC kernel 3.18
+ ▪ ba0f0c79252a radix-tree: add radix_tree_gang_lookup_index
+ ▪ 3ea34f258c17 lib: lz4: Set ARM_EFFICIENT_UNALIGNED_ACCESS
+ ▪ 92127675e3c7 lib/decompress: set the compressor name to NULL on error
+ ▪ c768a06531c4 lib/decompress.c: consistency of compress formats for kernel image
+
+ ▼ 12/07/2017
+
+
+ ▪ project external/libavc/
+ ▪ 8f141f1 Decoder: Fixed hang in the case of dangling field
+
+ ▪ project external/libhevc/
+ ▪ 3254798 Alloc extra bytes for bits buf for parse optimzation
+
+ ▪ project external/libmpeg2/
+ ▪ 382741b Update num_mbs_left When mb_x is Reset.
+ ▪ 70d2de5 Fix Error When Input Buffer is Full
+ ▪ 813a0af Reject Multiple seq_hdr With Different Dimensions
+ ▪ 0e297f2 DoS error - Bitstream Overflow
+
+ ▪ project frameworks/av/
+ ▪ bc1e3691c OMXNodeInstance: use a lock around OMX::freeNode
+ ▪ d61d33f52 Fix information disclosure in mediadrmserver
+ ▪ bd3bfec51 m4v_h263: fix global buffer overflow
+ ▪ 7bf6a4234 AudioPolicyService: Acquire mutex for SoundTriggerSession
+
+ ▪ project frameworks/base/
+ ▪ ae1ad8cdb89 Fix systemUI FC when using the Language QS tile (#212)
+
+ ▪ project system/bt/
+ ▪ 9844cd64 Read the correct amount of attributes
+
+ ▼ 12/05/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ f87ab86cbc4a crypto: add lz4 Cryptographic API
+ ▪ ef322c16c331 lz4: add overrun checks to lz4_uncompress_unknownoutputsize()
+ ▪ 06d6febc702c apq8084: enable CONFIG_CPUSETS
+
+ ▼ 12/04/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ f67ab28037ce cpuset: Add allow_attach hook for cpusets on android.
+ ▪ 8611ac4a39f5 cpuset: Make cpusets restore on hotplug
+
+ ▼ 12/03/2017
+
+
+ ▪ project build/
+ ▪ fbf949b75 Merge remote-tracking branch 'rr/nougat' into nougat-dt
+
+ ▪ project frameworks/base/
+ ▪ 9d88647d445 Toast: Fix toast layout for RTL (#210)
+ ▪ 458358186dd Core: Battery warning levels are inclusive, not exclusive
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ d71d8705a1bf config: activate some features for ims/volte and filesystem encryption
+ ▪ 22a58528e5a9 Merge remote-tracking branch 'lineage/lineage-15.0' into cm-14.1
+ ▪ ba823ec59317 Merge remote-tracking branch 'lineage/cm-14.1' into cm-14.1
+
+ ▪ project packages/apps/Snap/
+ ▪ 641f21c71 Merge remote-tracking branch 'github/cm-14.1' into nougat
+
+ ▼ 12/01/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ bdfdeae3d057 UPSTREAM: capabilities: ambient capabilities
+ ▪ 20a91216575c ANDROID: binder: add hwbinder,vndbinder to BINDER_DEVICES.
+ ▪ e1fc1fe6e43d android: binder: support for file-descriptor arrays.
+ ▪ 5f20c835e307 android: binder: support for scatter-gather.
+ ▪ e4578b19b02d android: binder: add extra size to allocator.
+ ▪ daedd9954fc0 android: binder: refactor binder_transact()
+ ▪ 5476f1357cd8 android: binder: support multiple /dev instances.
+ ▪ 409a1bb793a2 android: binder: deal with contexts in debugfs.
+ ▪ d5b1b0ebc608 android: binder: support multiple context managers.
+ ▪ 295be0c8035b android: binder: split flat_binder_object.
+ ▪ 63ee93059272 qcacld-2.0: Change local variables to dynamic in limProcessAuthFrame
+ ▪ df5f404135fc qcacld-2.0: Fix incorrect processing of encrypted auth frame
+ ▪ 3a4861328317 qcacld-2.0: Fix out of bound memory access
+ ▪ 7ab51a710194 Revert "apq8084: qcacld-2.0: limProcessAuthFrame: Alloc challengeTextArray dynamically"
+
+ ▪ project vendor/cm/
+ ▪ c2ba2d13 Merge remote-tracking branch 'rr/nougat' into nougat-devtec
+ ▪ 2a72449a prebuilt: add latest Substratum.apk and KernelAdiutor.apk
+
+ ▼ 11/30/2017
+
+
+ ▪ project bootable/recovery/
+ ▪ 3ec7dc7 update_verifier: Set the success flag if dm-verity is not enabled.
+
+ ▼ 11/28/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ 8609a10ea3a5 xhci: Remove BUG_ON in xhci_get_input_control_ctx.
+ ▪ f7eea452f275 usb: host: replace %p with %pK
+
+ ▼ 11/26/2017
+
+
+ ▪ project frameworks/av/
+ ▪ ebe9edd89 Revert "libstagefright: Use proper ctts offset"
+
+ ▪ project packages/apps/Trebuchet/
+ ▪ 3d8069053 Trebuchet: Use ICU4J public APIs
+
+ ▼ 11/25/2017
+
+
+ ▪ project frameworks/base/
+ ▪ c4526f1a869 SystemUI: LiveDisplay tile
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ 3d1afa628902 usb: dwc3: Fix Unbalanced irq wake for hs_phy_irq
+
+ ▼ 11/24/2017
+
+
+ ▪ project kernel/samsung/apq8084/
+ ▪ 3b400e451f8e usb: dwc3: Fix List Corruption seen with DCP detection
+ ▪ 0e7480a2aa3c timerfd: support CLOCK_BOOTTIME clock
+
+ ▼ 11/22/2017
+
+
+ ▪ project hardware/samsung/
+ ▪ 5169e86 audio: End voice call in set_mode()
+ ▪ f33a728 audio: Fix incall device switch handling
+ ▪ 4b29ec9 audio: Improve code readability
+ ▪ 7a82a0e audio: Initial support for amplifier HALs
 
