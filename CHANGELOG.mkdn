@@ -1,453 +1,331 @@
 
- ▼ Resurrection Remix Oreo Ver 6.0.0 Changelog
+ ▼ Resurrection Remix Oreo Ver 5.8.3 Changelog
 
 
 ====================
-     04-07-2018
-====================
-
-
-   * device/samsung/apq8084-common/
-765e2d9 apq8084-common: Reduce h264 maxBitRate/maxFrameWidth/maxFrameHeight
-c503330 apq8084-common: media profiles: drop unsupported 2160p modes
-bfba86f apq8084-common: Edit compatibility_matrix.xml
-0a34145 apq8084-common: Drop deprecated/Samsung decoder
-ad95c55 apq8084-common: media: Create media_profiles_V1_0.xml
-0957be6 apq8084-common: remove unsupported media codecs and profiles
-7f5913c apq8084-common: Remove startOffsetMs
-fa4e559 Revert "apq8084-common: Update madia_profiles.xml"
-06e548d Revert "apq8084-common: media: Create media_profiles_V1_0.xml"
-39fcf08 apq8084-common: Remove all traces of HWC2.1
-100ad75 apq8084-common: Use QTI HIDL power HAL
-
-   * device/samsung/trlte-common/
-d0ab97c apq8084-common: power: Add legacy qcom HAL compat code
-1344d13 apq8084-common: Use QTI HIDL power HAL
-
-   * kernel/samsung/apq8084/
-f65e127f6257 apq8084: remove msm_ispif debug output
-c26a43863e46 apq8084: remove mdss debug output
-234e976827a4 apq8084: remove msm_rng debug output
-ad50c71b4c31 apq8084: remove tomtom_codec debug output
-defdd92d6a98 Revert powersuspend in favor of QTI Power HAL
-4a4805daefe2 config: disable kernel modules support
-
-====================
-     04-06-2018
+     04-26-2018
 ====================
 
 
    * device/samsung/apq8084-common/
-611e462 apq8084-common: libril: Fix missing 4 bytes in RIL_Call struct
-dfcacb3 Revert "apq8084-common: fix android.hardware.wifi@1.0-service capabilities"
-fbc66bd apq8084-common: reenable auditing
-e0b8da6 apq8084-common: Use sdfat for exfat and vfat
-e12d058 apq8084-common: Use 64-bit binder API
-4367a11 apq8084-common: use LZMA compressed recovery
+5121e35 Merge remote-tracking branch 'apq/lineage-15.1' into lineage-15.1-halv1
+d168bf6 apq8084-common: Enable boot and system server dex-preopt
 
-   * device/samsung/trlte-common/
-eb116dc trlte-common: Use sdfat for exfat and vfat
+   * frameworks/av/
+3486677905 camera: Disable extra HDR frame on QCOM_HARDWARE
 
-   * kernel/samsung/apq8084/
-7d519b69d6b5 apq8084: apq8084_sec_defconfig: Disable exfat and vfat
-22e78ac68be8 fs: sdfat: Fix compilation for 32-bit targets
-7d19e832b492 fs: sdfat: Update to version 2.0.6-lineage
-a6b3c535e3aa fs: sdfat: Add -lineage extraversion to SDFAT_VERSION
-06d30bdc9373 fs: sdfat: Add config option to register sdFAT for VFAT
-81a1c8e602b2 fs: sdfat: Add config option to register sdFAT for exFAT
-cf65821dd20c apq8084: apq8084_sec_defconfig: Enable sdfat
-588c65f054cf fs: exfat: Allow disabling exfat
-eea91ab4edb9 fs: sdfat: Allow disabling sdfat
-73f34c799529 fs: sdfat: Fix compilation without debugging
-a7d997a1fae1 fs: Add sdfat
-d3fc5907ea11 apq8084_sec_defconfig: use 64-bit binder API
-42f26203a753 staging: binder: Improve Kconfig entry for ANDROID_BINDER_IPC_32BIT
-9651916e13be BACKPORT: ARM: 8091/2: add get_user() support for 8 byte types
-dbcd5133c566 esoc: mdm: If modem doesn't boot, set INVALID_STATE
-3cac26b640a5 apq8084: Esoc: remove Samsung hack
-39ba39fdcb6c Revert "esoc: mdm: Reset esoc only if the system is resetting"
-86d08bea04a4 apq8084: ss_vibrator: Support new lineage vibrator service
-e1672e89dc55 apq8084: drop modules
-356af3752d71 qcacld-2.0: Track memory allocation requests in driver
-b7c213c171d2 qcacld-2.0: svc: Replace instances of unadorned %p
-e39e42b4eb7b qcacld-2.0: Do not call pr_info while using spin_lock_irqsave
-8645278ec40e qcacld-2.0: Logging level changes on wlan HOST
-0bd4b6206d29 qcacld-2.0: Fix out of bound issue in wlan_logging_proc_sock_rx_msg
-c53f46ba1f91 qcacld-2.0: Add proper lengths to payload
-be2d3165c986 qcacld-2.0: Remove usage of f_dentry for Kernel upgrade
-3f47a21f469f uid_cputime: Check for the range while removing range of UIDs.
-4e66ecc98e44 power: align wakeup_sources format
-6b5be7edfeab UPSTREAM: block: disable entropy contributions for nonrot devices
-0b8e59e87347 UPSTREAM: lz4: fix wrong compress buffer size for 64-bits
-c98e2dc495d3 UPSTREAM: zram/zcomp: do not zero out zcomp private pages
-00ef4108f4dc UPSTREAM: zram: pass gfp from zcomp frontend to backend
-c2d1dfdd54ba UPSTREAM: zram: try vmalloc() after kmalloc()
-fe387e720cdd UPSTREAM: zram/zcomp: use GFP_NOIO to allocate streams
-cbb333992273 netfilter: interceptor: Drop Samsung's kuid_t implementation
-8b4ab72a58aa BACKPORT: ASN.1: fix out-of-bounds read when parsing indefinite length item
-75209440e1a5 UPSTREAM: KEYS: fix out-of-bounds read during ASN.1 parsing
-9fd63c4225b5 BACKPORT: xfrm: Fix return value check of copy_sec_ctx.
-83e1d8269f18 ipsec: Fix aborted xfrm policy dump crash
-6b125d4aecda BACKPORT: netlink: add a start callback for starting a netlink dump
+   * hardware/qcom/display-caf/apq8084/
+f0be16d03 display: Don't use gnu-oldstyle field designators
 
 ====================
-     04-05-2018
+     04-25-2018
 ====================
 
-
-   * device/qcom/sepolicy/
-fa21963 apq8084: kill qca1530 policy
-a4ba0e1 sepolicy: Remove definition and labelling of sf_lcd_density_prop
-156173d sepolicy: Label mpctl_socket as data_file_type
 
    * device/samsung/apq8084-common/
-adc4311 apq8084: add missing IR to manifests
-05b226a apq8084: init: Handle overriding system and vendor props
-1da9be7 Revert "apq8084-common: Move fingerprint here from lentis-common"
-3835aaa apq8084: radio/dual: Temporarily remove radio prop
-d103624 apq8084-common: Enable single/dual SIM support with fragments
-11736a3 apq8084-common: define common radio props
-3b4c1e2 apq8084-common: Update RIL_REQUEST_QUERY_AVAILABLE_NETWORKS response prop
-e045be1 apq8084-common: Make sure not to override earlier files added to DEVICE_MANIFEST_FILE
-7190c11 apq8084-common: add symlinks to ACBD vendor files
-6a4607e apq8084-common: create symlinks for libs and binaries, fix symlink creation
-9754ed9 apq8084-common: Switch to 3 FramebufferSurface buffers
-ddbf877 apq8084-common: Add OMX HAL to the manifest
-904adf3 Revert "Disable Treble OMX by default."
-d40a681 apq8084-common: media: Create media_profiles_V1_0.xml
-35fd052 apq8084-common: Update madia_profiles.xml
-46a32f2 apq8084-common: Upgrade camera library dependencies for AOSP 8.0.0
-80ce848 apq8084-common: camera: Modify base.common.version API define
-5497137 apq8084-common: Proximity sensor is a wakeup source too
-ac5bc8c apq8084-common: Update sensor HAL for O
-f0c2850 Revert "apq8084-common: sensors: Initial implementation of a wrapper for old sensors HAL"
-289ac43 apq8084-common: force NFC (s3fwrn5) firmware download
-038900d apq8084-common: Fix NFC for s3fwrn5
+ba338c7 apq8084-common: camera: improve debug output
+f0597cd apq8084-common: camera: only do static allocation once
+237c535 apq8084-common: camera: advertise video HDR mode based on rt HDR mode
+b915a49 apq8084: camera: fix setting preview FPS range
+af757fb apq8084-common: camera: reorder KEY_VIDEO_HFR_VALUES
+1220c38 apq8084-common: camera: Fix warnings in terms of unused parameters
+dd47ad5 apq8084-common: camera: Make parameter dump verbose rather than debug
+9547d16 apq8084-common: camera: drop forward declarations
+b5c12ef apq8084-common: camera: move KEY_VIDEO_HFR_VALUES where it belongs
+5d2a46d apq8084-common: camera: Fix snprintf length
+19a736d apq8084-common: camera: drop UHD video mode handling
 
-   * device/samsung/trlte-common/
-6b7f77b trlte-common: Fold fstab.full back into fstab.qcom
-b793e4a trlte-common: move common radio props to apq8084-common
-5a6a32c trlte-common: remove fingerprint stuff
-567dbf2 trlte-common: bring CPUs 1-3 down during RIL init
-cd30cd2 trlte-common: init: add comment to vibrator nodes
-f7586ca trlte-common: Switch to TARGET_SYSTEM_PROP
-ad9fae3 trlte-common: fingerprint: Bump version to 2.1
-d934b99 Revert "trlte-common: Move fingerprint to apq8084-common"
-88a4202 trlte-common: Move acdbdata files to vendor/etc/acdbdata
-e8a45e4 trlte-common: applied update for WiFi
-d920959 trlte-common: Fix Bluetooth pairing
-a2eccef trlte-common: Fix crashes on some game
-9a72ddc trlte-common: wifi: Update wpa/p2p overlay configs
-e3e7bf1 trlte-common: wifi: Configure the p2p_search_delay to 100 msec
-3c7c285 trlte-common: Add p2p_no_group_iface=1 to p2p_supplicant_overlay
-74bbfde trlte-common: wifi: set tdls_external_control to configure external control mode.
-9f35709 trlte-common: Update fingerprint enrollment graphic again
-8721f40 trlte-common: Update media packages
+====================
+     04-24-2018
+====================
+
+
+====================
+     04-23-2018
+====================
+
+
+====================
+     04-22-2018
+====================
+
+
+====================
+     04-21-2018
+====================
+
+
+   * device/samsung/apq8084-common/
+e99aa22 apq8084-common: Advanced Display: disable screen_curtain mode
+1ce7d8c apq8084-common: move AdvancedDisplay incl. overlays from lentis-common here
+
+====================
+     04-20-2018
+====================
+
+
+   * device/samsung/apq8084-common/
+e5e8d78 apq8084-common: set needed values for HALv1 tests
+
+   * hardware/qcom/display-caf/msm8974/
+060e6fe28 libvirtual should depend on libmedia
+b9109c1b8 Revert "libvirtual: Add libbase static library dependency"
 
    * kernel/samsung/apq8084/
-0993ff45be32 config: set wifi firmware path to vendor
+0412c532a651 enable CONFIG_DETECT_HUNG_TASK
+d6dd77fc2d22 Merge remote-tracking branch 'los/lineage-15.1' into lineage-15.1-github
+
+   * vendor/samsung/
+01b8f2c Merge remote-tracking branch 'apq/lineage-15.1' into lineage-15.1-github
 
 ====================
-     04-04-2018
-====================
-
-
-   * device/samsung/trlte/
-a67b849 trlte: Override vendor build fingerprint and use new helper function
-2ef9696 trlte: Inherit single-SIM radio support from -common
-
-   * hardware/qcom/audio-caf/msm8996/
-14d7df089 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/qcom/display-caf/msm8996/
-80f2baf0e Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/qcom/media-caf/msm8996/
-020e52b50 Merge tag 'LA.UM.6.5.r1-06700-8x96.0' of caf into lineage-15.1-caf-8996
-
-   * hardware/samsung/
-b3df6df remove recovery size check because recovery image bigger than allowed and not really needed
-
-   * packages/apps/Settings/
-093f80926e Update Note 4 (trltexx) maintainer
-d3d610f440 Settings: fix crash when settings QS sliders to 0
-
-   * vendor/rr/
-e1b6572f Merge remote-tracking branch 'm/oreo' into oreo
-902bd6a0 use owm changelog.sh file
-a8c2f9cc prebuild: use Deskclock instead prebuilded GoogleClock
-
-====================
-     04-03-2018
+     04-19-2018
 ====================
 
 
-   * packages/apps/Eleven/
-07b3e5c Eleven: fix card styles... 2 years later
-4859181 Eleven: update accent color to match new icon
-ade2849 Eleven: build with AAPT2
-181d4ed Eleven: default android animations for activities and fragments
-68476c5 Eleven: fix genres not updating for subsequent albums
+   * device/samsung/apq8084-common/
+100553d apq8084-common: Advanced Display: disable screen_curtain mode
+2cccff1 apq8084-common: move AdvancedDisplay incl. overlays from lentis-common here
+8eacd6c Revert "apq8084-common: Drop TARGET_USE_COMPAT_GRALLOC_ALIGN"
 
 ====================
-     04-02-2018
-====================
-
-
-   * build/make/
-45c1e22b7 core: remove duplicated boot jars
-af84f2426 Introduce non-preopt boot jars
-42fbef05c build: Introduce SubstratumService
-4dab61594 Only warn on LOCAL_CLANG set to false
-
-   * device/lineage/sepolicy/
-b95e366 common: Remove stale ntfs genfscon policy
-
-   * device/qcom/common/
-6e48da0 Remove QC releasetools and recovery extensions
-
-   * frameworks/base/
-e935e051512 Themes: Fix theming Qs expand/collapse drawable
-a4a9a68be92 SystemUI: Reload more assets on overlay change
-50477a8a55b base: Introduce SubstratumService
-6e0b09f91d0 OMS: Add back overlay modified callback implementation
-a3a3b916e0c OMS: StrictMode and files under /data/system/theme/
-7c586a99105 Hold "volume up" during boot to disable all overlays
-0ce8d7c1b55 ThemeSafety: Introduce App Crash Intent
-080c025f394 ApplicationsState: add filter for Substratum overlays [2/2]
-e0c145bc256 Extras: Add dynamic theme fonts support for O
-8a2ba065861 Extras: Add dynamic theme sound effects support
-ed076c3f0e9 Extras: Add dynamic theme shutdown and boot animation support
-6e6cd56f26b OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
-cf917b0e76a Revert "Revert "OMS: Only allow trusted overlays to be registered.""
-
-   * hardware/qcom/media-caf/msm8952/
-63c9787cc Revert "media: Adjust for new header Android.bp requirements"
-
-   * lineage-sdk/
-9d663a3 Revert "Revert "lineage-sdk: Update the way OMS records details about overlays""
-
-   * packages/apps/Contacts/
-
-   * packages/apps/DeskClock/
-
-   * packages/apps/Dialer/
-
-   * packages/apps/Eleven/
-
-   * packages/apps/FMRadio/
-
-   * packages/apps/FlipFlap/
-
-   * packages/apps/Gallery2/
-
-   * packages/apps/Recorder/
-
-   * packages/apps/Settings/
-a7f78633c5 Settings: Introduce Substratum changes.
-b85defef65 Revert "Revert "Update the way OMS records details about overlays""
-7687152792 RR: add new osprey maintainer name
-
-   * packages/apps/Snap/
-
-   * system/sepolicy/
-47034fdb Merge branch 'o' of https://github.com/SubstratumResources/platform_system_sepolicy into HEAD
-
-====================
-     04-01-2018
-====================
-
-
-   * external/f2fs-tools/
-ffcf3fa Merge branch 'master' of https://android.googlesource.com/platform/external/f2fs-tools into HEAD
-
-   * hardware/qcom/fm/
-bb6007c fm_hci/helium: Exclude from OSS builds
-
-   * hardware/qcom/media-caf/msm8952/
-b349c61d0 fix circular dependency libnativewindow <-> libui
-15e38737f media: Adjust for new header Android.bp requirements
-
-====================
-     03-31-2018
-====================
-
-
-   * device/lineage/sepolicy/
-43701f1 sepolicy: Change recovery_prop to lineage_recovery_prop
-
-   * external/f2fs-tools/
-d043a26 Merge "Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size""
-723be0a Revert "FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size"
-
-   * frameworks/base/
-
-   * frameworks/opt/telephony/
-0198a40ab IMS: Use proper phone to route emergency calls
-574722a49 Fix a cherrypick mistake
-
-   * hardware/qcom/audio-caf/msm8996/
-549e801a2 qahw_api: Ignore missing dependency
-
-   * hardware/qcom/audio-caf/msm8998/
-56eeef325 audio: add amplifier hooks for stream parameter manipulation
-
-   * lineage-sdk/
-
-   * packages/apps/DUI/
-
-   * packages/apps/LineageParts/
-
-   * packages/apps/ResurrectionOTA/
-
-   * packages/apps/Settings/
-
-====================
-     03-30-2018
-====================
-
-
-   * external/f2fs-tools/
-a2ef5f8 check_f2fs: integrate into android build
-30a495f Merge remote-tracking branch 'aosp/master' into HEAD
-
-   * packages/apps/Settings/
-ea81cfbd92 BatterySettings: Dont disable percentage options on square style
-
-====================
-     03-29-2018
+     04-18-2018
 ====================
 
    * android/
-d439319 lineage: Sync system/tools/dtbtool
-
-   * external/f2fs-tools/
-fdd1b1a Fix typo userata with userdata
-98ca6c5 ANDROID: check_f2fs: redirect errors to stdout
-
-   * frameworks/base/
-c493d01c37f BatteryMeterDrawable: add square style (1/2)
-
-   * hardware/qcom/gps/
-9846829 msm8084: Handle race condition in HAL post SSR
-ce8f4a3 msm8084: Memory management fixes
-2808a93 msm8084: Add new event mask for timezone
-38395e9 msm8084: Remove reporting gps status from loc eng layer
-10d1698 msm8084: Remove Redundant Log
-2552d38 msm8084: LocTimer repeated expiration
-26e1031 msm8084: MsgTask thread must call associator function always
-4d26814 msm8084: Adding a number of utilities
-de3415d msm8084: gps.conf parameters are in sap.conf table
-081c255 msm8084: Adding Mutex for Creating Context
-71adb97 msm8084: Removed unused code and unnecessary notice files
-23be84f msm8084: Avoiding race conditions during the pallellized builds in Android system
-
-   * hardware/qcom/wlan-caf/
-1321254 Merge tag 'LA.UM.6.4.r1-07600-8x98.0' into lineage-15.1-caf
-
-   * packages/apps/Dialer/
-4756df409 Dialer: comply with EU's GDPR
-
-   * packages/apps/Settings/
-84ac5d997d BatteryMeterDrawable: add square style [2/2]
-
-   * system/sepolicy/
-ad3b42ff SELinux: added to the policies without entries into the compatibility mapping file
-7022b6a3 Initial sepolicy rules for substratum service
-fd8a0ec2 Introduce sepolicy exceptions for theme assets
-
-====================
-     03-28-2018
-====================
-
-
-   * device/qcom/common/
-8dbb469 Remove dtbtool
-
-   * external/f2fs-tools/
-46322b2 FROMLIST: f2fs-tools: change to use #pragma pack(push, 1)
-457c992 FROMLIST: libf2fs: reset wanted_total_sectors by new sector_size
-6b39975 FROMLIST: resize.f2fs: fix access out-of memory boundary
-
-   * frameworks/base/
-c39284966ea base: SystemUI: bring back the google assist qs tiles
-961e6bdb1c2 Ambient battery level: use a ⚡ symbol when charging
-31ab5dfd508 Ambient: show battery level on bottom
-dbad6617b98 Add Google Sound Search Tile
-
-   * hardware/qcom/bootctrl/
-70633f5 Add sdm660 to the filter
-
-   * vendor/rr/
-6d500b4f Fix vendor path
-
-====================
-     03-27-2018
-====================
-
-
-   * frameworks/base/
-f7870e6a0c8 Revert "Add Google Sound Search Tile"
-083c7d1a2b2 Add Pulse Lava Lamp start and end colors (1/3)
-dfd7c4234b2 Add Google Sound Search Tile
-9666346b1f3 Use Auto brightness for Ambient Display
-
-   * packages/apps/DUI/
-fde3680 Add Pulse Lava Lamp start and end colors (2/3)
-
-   * packages/apps/Settings/
-b88f2b4ec1 Add Pulse Lava lamp start and end colors (3/3)
-
-====================
-     03-26-2018
-====================
-
-
-   * device/qcom/common/
-6ec9f73 Revert "Rules to enable LTO for Adreno GFX driver."
-
-   * device/rr/sepolicy/
-f9542e0 recovery: Use r_dir_file macro
-8a5f68a sepolicy: recovery: Allow reading battery and usb status
-a0f89b0 sepolicy: Allow vold to exec sgdisk
-a64277c sepolicy: Improve external storage rules
-045fcdc sepolicy: allow untrusted app to find styleInterface
-
-   * frameworks/base/
-4c41cbe07e6 PackageManager: Don't dereference mPlatfromPackage until available
-675e9c01c5e Camera: Expose Aux camera to apps present in the whitelist
-
-   * hardware/samsung/
-d5b988f mkbootimg: Include system/tools/dtbtool
-
-   * packages/services/OmniJaws/
-63208d4 OmniJaws: fill incomplete forecast list with dummies
-
-   * system/nfc/
-81b278f bcm2079x: Hardcode nci_ctrl_size to the Nougat value
-
-   * system/sepolicy/
-17d7a3b0 Sepolicy: Fix perfprofd path
-
-   * vendor/rr/
-77e31d5d soong: Add TARGET_USES_QTI_CAMERA_DEVICE
-34acdacc lineage: add generic lineage targets
-
-====================
-     03-25-2018
-====================
-
-
-   * device/lineage/sepolicy/
-467738e recovery: Use r_dir_file macro
+8f46c5e lineage: Track our own openssh repo
 
    * frameworks/av/
-ffd2754f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
-8a6a2c381 Camera: CameraHardwareInterface changes to support Extended FD
+0cfad26901 Camera: check metadata type before releasing frame
+f4731ac5b3 camera/media: Support legacy HALv1 camera in mediaserver
 
-   * hardware/interfaces/
-c20158f9 camera: Only link and use vendor.qti.hardware.camera.device if specified
+   * frameworks/base/
+6fb5a705e8a settings: Allow accessing LineageSettings via settings command
+4dad570b6a4 frameworks/base: Support for third party NFC features and extensions
+2de1bbac502 Keyguard: Allow disabling fingerprint wake-and-unlock
+de95f241316 fingerprint: notify client when cancelling succeeded
+7522061652a SettingsProvider: explicitly include android support libs
 
-   * hardware/libhardware/
-510a5f06 audio_amplifier: add hooks for stream parameter manipulation
+   * hardware/qcom/display-caf/apq8084/
+c59714ba7 Add -Wno-error to compile with global -Werror.
+ed267b8d3 Fix -Wmacro-redefined werror issues.
+39eb2094e hwc: Start with ROI set to destination
+04487f72a libgralloc: Align secure video and rotator buffers to 2M
+dcabbfca9 libvirtual should depend on libmedia
+bee7c812b gralloc: Handle RAW_OPAQUE formats similar to blob
+5cd994c69 Fix duplicate copy file rules
+a79fb6377 qservice: Allow camera server to call into HWC
+
+   * hardware/qcom/media-caf/apq8084/
+29e06f3f9 mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
+a42a7cda3 mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
+
+   * kernel/samsung/apq8084/
+97b3741a629d apq8084: update kernel header
+f8b3ac248bfc msm: vidc: Fix limit for LTR mode control
+e40d61838681 msm: vidc: disable CPU L2 cache PC during video sessions
+9d902142fa95 video: mdss: LiveDisplay driver
+c500e954640f Merge remote-tracking branch 'los/lineage-15.1' into lineage-15.1-github
+07bc1978fb21 apq8084: update kernel header
+a077f3645ea4 msm: vidc: Fix limit for LTR mode control
+652b5ecc1f1a msm: vidc: disable CPU L2 cache PC during video sessions
+2bbd28d925e9 video: mdss: LiveDisplay driver
+a6460ebbcc0f video: samsung: mdnie: Expose no. of display modes
+974342242a27 video: mdnie: Sanitize sysfs
+f1fc19d07ce0 video: mdnie: Return mode number
+
+   * lineage-sdk/
+35cfcf8 sdk: Remove low power restrictions on color control
+c6efd51 LineageSettingsProvider: explicitly include android support libs
+7b03987 README: Point to the new wiki
+df88839 lineage-sdk: Update validators for button settings
+aa63b85 sdk: ilama API (9)
+c46556e Merge branch 'oreo' of https://github.com/ResurrectionRemix/lineage-sdk into oreo
+
+   * packages/apps/LineageParts/
+5f15b5a Revert "LineageParts: Build with AAPT2"
+d61bd6b LineageParts: Build with AAPT2
+1f3af6f ButtonSettings: Add a toggle for button backlight only when pressed
+
+   * system/sepolicy/
+6223be69 Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+4c719501 Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+
+   * vendor/rr/
+7237d79d soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+b8e9467f build: set correct path
+
+====================
+     04-17-2018
+====================
+
+
+   * frameworks/base/
+32663db20c0 Quick settings panel : Set transparency [1/2]
+de3f4687981 Fw_base - custom Toast color options (1/2)
+
+   * hardware/qcom/media-caf/apq8084/
+bda60bfca mm-video-v4l2: vidc: Add support for OMX_IndexConfigAndroidIntraRefresh
+f24ca0204 mm-video-v4l2: vdec: Add range check before native_buffer usage
+a7047b28a mm-video-v4l2: vidc: fix matching of extension strings
+eb2d7c886 mm-video-v4l2: venc: Advertise constrained profiles for AVC encoder
+f2501151c fix circular dependency libnativewindow <-> libui
+
+   * hardware/qcom/power/
+ed3426d power: fix sysfs_read/sysfs_write usage
+158576f power: add back check for ro.vendor.extension_library
+abe7e65 power: msm8952: Minor code cleanup
+6204c67 power: msm8996: Remove dead code
+8c55d3c power: msm8974: POWER_HINT_INTERACTION improvements
+
+   * packages/apps/Contacts/
+d1c544e4b Hide help and feedback in AOSP contacts
+
+====================
+     04-16-2018
+====================
+
+
+   * device/samsung/apq8084-common/
+0a17aeb Revert "apq8084-common: Drop TARGET_USE_COMPAT_GRALLOC_ALIGN"
+
+   * device/samsung/trlte/
+3f6add1 Merge remote-tracking branch 'apq/lineage-15.1' into los-15.1-rr
+
+   * device/samsung/trlte-common/
+76e2ced Merge remote-tracking branch 'apq/lineage-15.1' into lineage-15.1-github
+
+   * hardware/qcom/media-caf/apq8084/
+50725790e libc2dcolorconvert: Fix address in unmap call
+ddf4a35e5 hal: Added LOCAL_VENDOR_MODULE to set output path of the binaries
+
+   * hardware/samsung/
+735058d Merge remote-tracking branch 'los/lineage-15.1' into lineage-15.1
+
+====================
+     04-15-2018
+====================
+
+
+   * frameworks/base/
+c95f3f7b073 OMS: Dismantle FLAG_OVERLAY_TRUSTED check in isOverlayPackage
+
+   * hardware/qcom/media-caf/msm8974/
+adc438b8f mm-video-v4l2: vdec: Disallow changing buffer modes/counts on allocated ports
+2c2ca636c mm-video-v4l2: venc: Disallow changing buffer count/size on allocated port
+
+====================
+     04-14-2018
+====================
+
+
+   * device/samsung/trlte-common/
+4e4a48a trlte-common: Add sensors.qcom and libagc_max.so
+51298d0 Revert "proprietary: mark md5 for libmmcamera2_sensor_modules.so"
+
+   * frameworks/native/
+87e2b4280 Merge pull request #3 from Adriannemerenco/oreo
+
+   * vendor/samsung/
+47a3e75 trlte-common: Add sensors.qcom and libagc_max.so
+
+====================
+     04-13-2018
+====================
+
+   * android/
+edf7966 manifest: Sync HVX neuralnetworks HAL
+6e7b438 lineage: Sync NXP NFC stack
+
+   * build/make/
+92459a622 core: include vendor_buildinfo.sh when TARGET_COPY_OUT_VENDOR=system
+f300b30f0 core: Dont overwrite build.prop when TARGET_COPY_OUT_VENDOR=system
+0e77d271d Install (vendor|system/vendor)/build.prop always
+3b65b173e dumpvar: Dump TARGET_USE_SDCLANG
+d54e7653c binary: Append cc/cxx wrapper to sdclang
+cacf04289 build: Require devices to opt-in for SDCLANG
+11f1cfc91 Turn off sdclang for cfi sanitizer
+49e041dfc Add support for using the secondary SDLLVM toolchain
+d45f9cceb Control building shared libs, static libs and executables with SDLLVM LTO
+39f42fba8 Add support for building with proprietary compiler
+43557b318 build: build generic lineage targets from vendor/lineage
+06d2f9dad Revert "products: make targets used for addonsu inherit from lineage"
+
+   * external/openssh/
+836dcfa Revert SSHDIR to /data/ssh
+bcbc739 _PATH_SSH_PROGRAM should point to ssh not sftp - this fixes scp
+
+   * frameworks/native/
+c7735b636 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * hardware/qcom/audio-caf/msm8998/
+e043b4664 audio: Fixes for VNDK_VERSION=current
+1a5c4cb65 Make libqcomvoiceprocessing build with the VNDK.
+17fcdfed7 Make libqcomvisualizer build with the VNDK.
+1e3c7598c Make libqcompostprocbundle build with the VNDK.
+384873799 Build audio.primary.* with BOARD_VNDK_VERSION
+35a5ab523 Add libhardware_headers and libsystem_headers to modules
+
+   * hardware/qcom/bt-caf/
+2c5d2c5 Add missing headers to libbt-vendor
+
+   * hardware/qcom/display-caf/msm8998/
+e533c7910 Add GLESv3 as a dependency.
+a00dbd8e3 Fix libcutils private headers
+ce4ce8932 Build libqdMetaData with BOARD_VNDK_VERSION
+01b92deb2 Build lights.msm8998 with the VNDK.
+9008131a3 Use header lib instead of using global include path
+7dfb3a7d8 Mark msm8998 modules LOCAL_VENDOR_MODULE
+
+   * hardware/qcom/media-caf/msm8998/
+91db4db97 fix circular dependency libnativewindow <-> libui
+
+   * system/core/
+75790f6e0 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+   * system/sepolicy/
+02863ef5 Merge remote-tracking branch 'LineageOS/lineage-15.1' into oreo
+
+====================
+     04-12-2018
+====================
+
+
+   * device/samsung/apq8084-common/
+d063317 Merge remote-tracking branch 'apq/lineage-15.1' into lineage-15.1
+
+   * device/samsung/trlte/
+ba72c43 trlte: overlay: CarrierConfig: Use the correct file name
+
+   * device/samsung/trlte-common/
+bebe9e8 trlte-common: init: remove hcidump service
+dbfb034 trlte-common: Convert audio_effects.conf to XML
+ef95936 trlte-common: Use QC soundfx libs
+9024c0e trlte-common: drop init.qcom.usb.sh in favor of rc file
+9bd834b Merge remote-tracking branch 'apq/lineage-15.1' into lineage-15.1-github
+
+   * hardware/samsung/
+b02622b fingerprint: send cancel-message to system
+1dc8504 set paths to /sys/class/leds
+
+   * kernel/samsung/apq8084/
+bfd6c0c3db50 apq8084: convert tcrypt_mod_init back to a normal module_init
+
+   * vendor/samsung/
+7685b41 trlte-common: Remove libmysound.so
+
+====================
+     04-11-2018
+====================
+
+
+   * device/samsung/apq8084-common/
+8832b0d apq8084-common: drop TARGET_POWERHAL_VARIANT, useless with QTI HIDL PowerHAL
+cd97f5f apq8084-common: add debug.camcorder.disablemeta property
+
+   * device/samsung/trlte-common/
+4ed8f54 framework: enable button backlights
+
+   * kernel/samsung/apq8084/
+0d9572b953e7 ARM: dts: msm: Add RBCPR and RPM master stats for APQ8084
 
